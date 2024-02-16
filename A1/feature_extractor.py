@@ -159,8 +159,8 @@ def load_data(datafile):
             new_lines.append(line)
         break
     return new_lines
-#lines = load_data('data/blue_castle_raw.txt')
-lines = ['Allen Ginsberg , a famous poet, wrote "Howl", a controversial poem.']
+lines = load_data('data/blue_castle_raw.txt')
+#lines = ['Allen Ginsberg , a famous poet, wrote "Howl", a controversial poem.']
 
 
 df = parse_sentences(lines)
