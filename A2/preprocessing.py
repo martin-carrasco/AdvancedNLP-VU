@@ -35,7 +35,7 @@ def preprocessing(input_filepath, output_filepath):
     # We need to duplicate the sentences for each predicate and then drop the column with no unique name.            #
     ##################################################################################################################
     
-    # Get a list of column names starting with 'Column_' -> didn't work as intended
+    '''# Get a list of column names starting with 'col_' -> didn't work as intended
     columns_to_drop = []
 
     # Iterate through columns
@@ -45,7 +45,7 @@ def preprocessing(input_filepath, output_filepath):
             if new_df[column].notna().any():
                 continue  # Keep the column
             else:
-                columns_to_drop.append(column)  # Mark for dropping
+                columns_to_drop.append(column)  # Mark for dropping'''
     
     return new_df        
 
