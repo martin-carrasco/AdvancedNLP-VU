@@ -78,10 +78,12 @@ def preprocessing(df):
         # Remove empty predicate
         if '_' in predicates:
             predicates.remove('_')
-
+        
         for pred in predicates:
             # Iterate over the tokens which are not predicates
             for i, row in sentence_df[sentence_df['up:preds'] == '_'].iterrows():
+                if row['upos'] == 'PUNCT':
+                    continue
                 token_df_dict['token'].append(row['word'])
                 token_df_dict['lemma'].append(row['lemma'])
                 token_df_dict['pos'].append(row['upos'])
