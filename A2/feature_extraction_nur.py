@@ -30,30 +30,35 @@ def generate_ngrams(df):
         bw_bigrams.extend(bw_bigram)
 
         # Forward token trigram
-        fw_trigram_shift = sentence['word'].shift(-2)
+        fw_trigram_shift = sentence['token'].shift(-2)
         fw_trigram = (sentence['token'] + ' ' + fw_bigram_shift.fillna('') + ' ' + fw_trigram_shift.fillna('')).tolist()
         fw_trigrams.extend(fw_trigram)
 
-        # Backward tokentrigram
-        bw_trigram = (sentence['token'].shift(2).fillna('') + ' ' + sentence['token'].shift(1).fillna('') + ' ' + sentence['token']).tolist()
+        # Backward token trigram
+        bw_trigram_shift = sentence['token'].shift(2)
+        bw_trigram = (bw_trigram_shift.fillna('') + ' ' + bw_bigram_shift.fillna('') + ' ' + sentence['token']).tolist()
         bw_trigrams.extend(bw_trigram)
 
         # POS N-grams:
 
         # Forward POS bigram
-        fw_pos_bigram = (sentence['POS'] + ' ' + sentence['POS'].shift(-1).fillna('')).tolist()
+        fw_pos_bigram_shift = sentence['POS'].shift(-1)
+        fw_pos_bigram = (sentence['POS'] + ' ' + fw_pos_bigram_shift.fillna('')).tolist()
         fw_pos_bigrams.extend(fw_pos_bigram)
 
         # Backward POS bigram
-        bw_pos_bigram = (sentence['POS'].shift(1).fillna('') + ' ' + sentence['POS']).tolist()
+        bw_pos_bigram_shift = sentence['POS'].shift(1)
+        bw_pos_bigram = (bw_pos_bigram_shift.fillna('') + ' ' + sentence['POS']).tolist()
         bw_pos_bigrams.extend(bw_pos_bigram)
 
         # Forward POS trigram
-        fw_pos_trigram = (sentence['POS'] + ' ' + sentence['POS'].shift(-1).fillna('') + ' ' + sentence['POS'].shift(-2).fillna('')).tolist()
+        fw_pos_trigram_shift = sentence['POS'].shift(-2)
+        fw_pos_trigram = (sentence['POS'] + ' ' + fw_pos_bigram_shift.fillna('') + ' ' + fw_pos_trigram_shift.fillna('')).tolist()
         fw_pos_trigrams.extend(fw_pos_trigram)
 
         # Backward POS trigram
-        bw_pos_trigram = (sentence['POS'].shift(2).fillna('') + ' ' + sentence['POS'].shift(1).fillna('') + ' ' + sentence['POS']).tolist()
+        bw_pos_trigram_shift = sentence['POS'].shift(2)
+        bw_pos_trigram = (bw_pos_trigram_shift.fillna('') + ' ' + bw_pos_bigram_shift.fillna('') + ' ' + sentence['POS']).tolist()
         bw_pos_trigrams.extend(bw_pos_trigram)
 
     df['fw_bigram'] = fw_bigrams
@@ -71,5 +76,5 @@ def generate_ngrams(df):
 if __name__ == '__main__':
 
     df = pd.read_csv('A2/preprocessed_train_with_header.tsv', sep='\t', header=0)
-    df_new = generate_ngrams(df)
-    df_new.to_csv('A2/data/feature_extraction_nur.csv', index=False) # to test the implementation
+    df_ngram = generate_ngrams(df)
+    #df_new.to_csv('A2/data/feature_extraction_nur.tsv', sep="\t", index=False) # to test the implementation
