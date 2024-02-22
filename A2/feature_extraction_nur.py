@@ -1,3 +1,4 @@
+import spacy
 import pandas as pd
 
 def generate_ngrams(df):
@@ -73,8 +74,35 @@ def generate_ngrams(df):
     return df
 
 
+def ner_tagger(df):
+    
+    """
+    Add a 'named_entity' column to the DataFrame by performing Named Entity Recognition using spaCy.
+    Args: df (pandas.DataFrame): DataFrame with a 'token' column containing tokenized text
+    Returns: pandas.DataFrame: DataFrame with an additional 'named_entity' column containing named entity tags
+    """
+    
+    # Load English tokenizer, tagger, parser, NER
+    nlp = spacy.load("en_core_web_sm")
+    
+    # Process each token and obtain named entity tags
+    named_entity_tags = []
+    for token in df['token']:
+        if isinstance(token, str):
+            doc = nlp(token)
+            named_entity_tags.append(doc.ents[0].label_ if doc.ents else "O")  # Using the label of the first entity if present, else 'O'
+        else:
+            named_entity_tags.append("O")  # Handle NaN values
+    
+    # Add named entity tags as a new column in the DataFrame
+    df['NER_tag'] = named_entity_tags
+    
+    return df
+
+
 if __name__ == '__main__':
 
     df = pd.read_csv('A2/preprocessed_train_with_header.tsv', sep='\t', header=0)
-    df_ngram = generate_ngrams(df)
+    df_ner = ner_tagger(df)
+    df_ngram = generate_ngrams(df_ner)
     #df_new.to_csv('A2/data/feature_extraction_nur.tsv', sep="\t", index=False) # to test the implementation
