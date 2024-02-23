@@ -27,7 +27,7 @@ if __name__ == '__main__':
         df = add_features_1(df)
         df = add_features_2(df)
         df = add_features_3(df)
-        df.to_csv(f'data/input/{file_name}_final.tsv', index=False, delimiter='\t')
+        df.to_csv(f'data/input/{file_name}_final.tsv', index=False, sep='\t')
     
     elif args.op_mode == 'model':
         if not args.mode:
