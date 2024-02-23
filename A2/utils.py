@@ -1,6 +1,7 @@
 import pandas as pd
 from typing import Tuple
 import fasttext.util
+import numpy as np
 
 def embedding_or_empty(word, model):
     """  Get the word embedding from the model or return a zero vector if the word is not in the model
@@ -14,7 +15,7 @@ def feature_encode(df: pd.DataFrame) -> Tuple:
     """ Encode the features and return the X and y
     """
     fasttext.util.download_model('en', if_exists='ignore')
-    model = fasttext.load_model('models/cc.en.300.bin')
+    model = fasttext.load_model('data/models/cc.en.300.bin')
 
     # Add one-hot encoded columns for pos
     one_hot_df = pd.get_dummies(df['POS'], prefix='POS')
