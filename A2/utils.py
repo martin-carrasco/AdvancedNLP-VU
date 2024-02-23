@@ -14,7 +14,7 @@ def feature_encode(df: pd.DataFrame) -> Tuple:
     """ Encode the features and return the X and y
     """
     fasttext.util.download_model('en', if_exists='ignore')
-    model = fasttext.load_model('cc.en.300.bin')
+    model = fasttext.load_model('models/cc.en.300.bin')
 
     # Add one-hot encoded columns for pos
     one_hot_df = pd.get_dummies(df['POS'], prefix='POS')
