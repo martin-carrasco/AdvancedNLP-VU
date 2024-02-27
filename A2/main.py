@@ -25,8 +25,8 @@ if __name__ == '__main__':
         file_name = args.input.split('.')[0]
         df = preprocessing(args.input) 
         df = add_features_1(df)
-        df = add_features_2(df)
-        df = add_features_3(df)
+        #df = add_features_2(df)
+        #df = add_features_3(df)
         df.to_csv(f'data/input/{file_name}_final.tsv', index=False, sep='\t')
     
     elif args.op_mode == 'model':

@@ -1,5 +1,6 @@
 import pandas as pd
 import spacy
+import tqdm
 import benepar
 
 nlp = spacy.load('en_core_web_md')
@@ -19,7 +20,7 @@ def add_features_1(df: pd.DataFrame) -> pd.DataFrame:
     df['voice_active'] = df.apply(lambda x: True if 'nsubjpass' in x['deprel'] else False, axis=1)
 
     # Iterate over each sentence
-    for sentence_id in list(df['sentence_id'].unique()):
+    for sentence_id in tqdm.tqdm(list(df['sentence_id'].unique())):
         sentence_df = df[df['sentence_id'] == sentence_id]
 
         sentence_text = ''
