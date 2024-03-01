@@ -3,14 +3,18 @@ import spacy
 import tqdm
 import benepar
 
-nlp = spacy.load('en_core_web_md')
+nlp = spacy.load('en_core_web_md', disable=["tok2vec", "tagger", "parser", "attribute_ruler", "lemmatizer", "ner"])
+nlp.add_pipe("sentencizer")
 nlp.add_pipe('benepar', config={'model': 'benepar_en3'})
 
 
 def add_features_1(df: pd.DataFrame) -> pd.DataFrame:
     # Initialize columns as 0 
-    df['position_rel_left']  = 0
-    df['position_rel_right']  = 0
+    mask_left = (df['token_id'] < df['predicate_token_id']) & (df['sentence_id'] == df['sentence_id'])
+    mask_right = (df['token_id'] > df['predicate_token_id']) & (df['sentence_id'] == df['sentence_id'])
+
+    df['position_rel_left']  = mask_left
+    df['position_rel_right']  = mask_right
 
     # Phrase label of the token or parent
     df['phrase_type']  = ''
@@ -20,29 +24,17 @@ def add_features_1(df: pd.DataFrame) -> pd.DataFrame:
     df['voice_active'] = df.apply(lambda x: True if 'nsubjpass' in x['deprel'] else False, axis=1)
 
     # Iterate over each sentence
-    for sentence_id in tqdm.tqdm(list(df['sentence_id'].unique())):
-        sentence_df = df[df['sentence_id'] == sentence_id]
+    for sentence_id in tqdm.tqdm(list(df['sentence_num'].unique())):
+        sentence_df = df[df['sentence_num'] == sentence_id]
+
+        unique_df = sentence_df[sentence_df['sentence_id'] == sentence_df.iloc[0]['sentence_id']]
 
         sentence_text = ''
         # Add space after words if required
-        for i, row in sentence_df.iterrows():
+        for i, row in unique_df.iterrows():
             sentence_text += row['token']
             if 'SpaceAfter' not in row['misc']:
                 sentence_text += ' '
-        
-        # Iterate over each token in the sentence
-        for token_id in list(sentence_df['token_id'].unique()):
-            # Fetch the token row
-            token_df = df[(df['token_id'] == token_id) & (df['sentence_id'] == sentence_id)]
-            token = token_df['token']
-            
-            # Extract the predicate token id 
-            predicate =  token_df['predicate_token_id']
-
-            # Extract the relative position of the token in the sentence
-            df.loc[((df['sentence_id'] == sentence_id) & (df['token_id'] == token_id)), 'position_rel_left'] =  token_id < predicate
-            df.loc[((df['sentence_id'] == sentence_id) & (df['token_id'] == token_id)), 'position_rel_right'] =  token_id > predicate
-
 
         doc = nlp(sentence_text)
 
@@ -59,7 +51,7 @@ def add_features_1(df: pd.DataFrame) -> pd.DataFrame:
                 else:
                     phrase_type = current_span._.labels[0]
                     break
-            mask = (df['sentence_id'] == sentence_id) & (df['token_id'] == token_id)
+            mask = (df['sentence_num'] == sentence_id) & (df['token_id'] == token_id)
             df.loc[mask, 'phrase_type'] = phrase_type
     return df
 
