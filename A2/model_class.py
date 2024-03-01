@@ -9,9 +9,11 @@ def train_model(train_file: str):
     """  Train the model and save it to a file
     """
     df = pd.read_csv('data/input/' + train_file, delimiter='\t')
-    df = df[(df['label'] != 'O') | (df['label'] != 'V')]
+    df = df[(df['label'] != 'O') & (df['label'] != 'V')]
     X, y = feature_encode(df, task_ident=False)
+    print('Training model ...')
     clf = LogisticRegression(random_state=0, max_iter=1000, multi_class='multinomial').fit(X, y)
+    print('Saving model ...')
     dump(clf, 'data/models/model_classf.joblib')
     print('Model saved to model_classf.joblib')
 
@@ -19,7 +21,7 @@ def predict_model(test_file: str, model_file: str):
     """  Predict the model and save it to a file
     """
     df = pd.read_csv('data/input/' + test_file, delimiter='\t')
-    df = df[(df['label'] != 'O') | (df['label'] != 'V')]
+    df = df[(df['label'] != 'O') & (df['label'] != 'V')]
     X, y = feature_encode(df, task_ident=False)
     clf = load(f'data/models/{model_file}')
 

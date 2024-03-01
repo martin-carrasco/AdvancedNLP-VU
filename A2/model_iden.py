@@ -10,7 +10,9 @@ def train_model(train_file: str):
     """
     df = pd.read_csv('data/input/' + train_file, delimiter='\t')
     X, y = feature_encode(df, task_ident=True)
+    print('Training model ...')
     clf = LogisticRegression(random_state=0).fit(X, y)
+    print('Saving model ...')
     dump(clf, 'data/models/model_ident.joblib')
     print('Model saved to model_ident.joblib')
 

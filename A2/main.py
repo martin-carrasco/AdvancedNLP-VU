@@ -40,6 +40,8 @@ if __name__ == '__main__':
             else:
                 train_model_class(args.input)
         elif args.mode == 'predict':
+            if not args.model_file:
+                raise Exception('Model file is required')
             if args.task == 'identify':
                 predict_model_iden(args.input, args.model_file)
             else:
