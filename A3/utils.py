@@ -7,39 +7,74 @@ def check_label(x, i: int) -> str:
     if len(x) < i+1:
         return 'O'
     else:
-        return x[i] if x[i] != '_' else 'O'
+        return x[i] if x[i] not in  ['_', 'V'] else 'O'
 
 label_all_tokens = False
 
-def tokenize_and_align_labels(tokenizer, row):
-    tokenized_inputs = tokenizer(row["token"], padding='max_length', max_length=85, truncation=True, is_split_into_words=True)
-    pred_tokens = tokenizer([row['predicate_token']], is_split_into_words=True)
-    for idx in range(len(pred_tokens["input_ids"])-1):
-        idx = idx+1
-        tokenized_inputs['input_ids'].append(pred_tokens["input_ids"][idx])
-        tokenized_inputs['token_type_ids'].append(pred_tokens["token_type_ids"][idx])
-        tokenized_inputs['attention_mask'].append(pred_tokens["attention_mask"][idx])
+def tokenize_and_align_labels_2(tokenizer, row):
+    """ Tokenize the inputs and align the labels with them. It is particularly important to
+        note the step in adding the tokenized predicate at the end of the input embeddings.
 
-    word_ids = tokenized_inputs.word_ids()
-    previous_word_idx = None
+   Args:
+        tokenizer: Tokenizer
+        row: dict
+    Returns:
+        dict
+
+    """
+    pred_token = row['predicate_token'][0]
+    pred_token_base = row['predicate_token'][0]
+    tok_sent = tokenizer(row["token"], is_split_into_words=True)
+    tok_whole = tokenizer(row["token"], [pred_token, pred_token_base], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
+
     label_ids = []
-    for word_idx in word_ids:
-        # Special tokens have a word id that is None. We set the label to -100 so they are automatically
-        # ignored in the loss function.
+
+    for i, word_idx in enumerate(tok_whole.word_ids()):
         if word_idx is None:
+            # If it is a special token do not add a label
             label_ids.append(-100)
-        # We set the label for the first token of each word.
-        elif word_idx != previous_word_idx:
+        elif i >= len(tok_sent['input_ids']):
+            # If the token is part of the predicate do not add a label
+            label_ids.append(-100)
+        else: 
+            # Set the label of the first token of each word
             label_ids.append(row['label'][word_idx])
-        # For the other tokens in a word, we set the label to either the current label or -100, depending on
-        # the label_all_tokens flag.
-        else:
-            label_ids.append(row['label'][word_idx] if label_all_tokens else -100)
-        previous_word_idx = word_idx
 
 
-    tokenized_inputs["labels"] = label_ids
-    return tokenized_inputs
+    tok_whole["labels"] = label_ids
+    return tok_whole 
+
+def tokenize_and_align_labels(tokenizer, row):
+    """ Tokenize the inputs and align the labels with them. It is particularly important to
+        note the step in adding the tokenized predicate at the end of the input embeddings.
+
+   Args:
+        tokenizer: Tokenizer
+        row: dict
+    Returns:
+        dict
+
+    """
+    pred_token = row['predicate_token'][0]
+    tok_sent = tokenizer(row["token"], is_split_into_words=True)
+    tok_whole = tokenizer(row["token"], [pred_token], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
+
+    label_ids = []
+
+    for i, word_idx in enumerate(tok_whole.word_ids()):
+        if word_idx is None:
+            # If it is a special token do not add a label
+            label_ids.append(-100)
+        elif i >= len(tok_sent['input_ids']):
+            # If the token is part of the predicate do not add a label
+            label_ids.append(-100)
+        else: 
+            # Set the label of the first token of each word
+            label_ids.append(row['label'][word_idx])
+
+
+    tok_whole["labels"] = label_ids
+    return tok_whole 
 
 def compute_metrics(p, label_list):
     predictions, labels = p
