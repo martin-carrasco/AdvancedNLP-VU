@@ -25,7 +25,7 @@ df_dict = {
 def parse(filename: str) -> pd.DataFrame:
     """ Parse a conllu file and return a dataframe with the parsed data
     """
-    with open(raw_dir + filename, 'r') as f:
+    with open(raw_dir + filename, 'r', encoding="utf8") as f:
         sent_cnt = -1
         for line in f.readlines():
             line = line.strip()
