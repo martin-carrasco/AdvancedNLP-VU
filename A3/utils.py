@@ -12,7 +12,7 @@ def check_label(x, i: int) -> str:
 label_all_tokens = False
 
 def tokenize_and_align_labels(tokenizer, row):
-    tokenized_inputs = tokenizer(row["token"], truncation=True, is_split_into_words=True)
+    tokenized_inputs = tokenizer(row["token"], padding='max_length', max_length=85, truncation=True, is_split_into_words=True)
     pred_tokens = tokenizer([row['predicate_token']], is_split_into_words=True)
     for idx in range(len(pred_tokens["input_ids"])-1):
         idx = idx+1
