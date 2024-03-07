@@ -1,15 +1,45 @@
 import numpy as np
-from datasets import load_dataset, load_metric
+from preprocessing import preprocessing
+from datasets import Dataset, load_metric, load_dataset, Sequence, ClassLabel, Features, Value
 
 metric = load_metric("seqeval")
 
-def check_label(x, i: int) -> str:
-    if len(x) < i+1:
-        return 'O'
-    else:
-        return x[i] if x[i] not in  ['_', 'V'] else 'O'
-
 label_all_tokens = False
+
+def process_df_into_ds(filename: str):
+    """ Load the dataset and process it into a format that can be used by the model.
+        Args:
+            filename: str - the name of the file to be loaded
+        Returns:
+            ds: dataset - the processed dataset
+    """
+    df = preprocessing(filename)
+    sent_df = df.groupby(['sentence_id']).agg(lambda x: x.tolist()).reset_index()
+    label_list = list(df['label'].unique())
+
+    features = Features({
+        'token_id': Sequence(feature=Value('float32')),
+        'sentence_num': Sequence(feature=Value('int32')),
+        'token': Sequence(feature=Value('string')),
+        'lemma': Sequence(feature=Value('string')),
+        'upos': Sequence(feature=Value('string')),
+        'POS': Sequence(feature=Value('string')),
+        'feats': Sequence(feature=Value('string')),
+        'head': Sequence(feature=Value('string')),
+        'deprel': Sequence(feature=Value('string')),
+        'deps': Sequence(feature=Value('string')),
+        'misc': Sequence(feature=Value('string')),
+        'predicate': Sequence(feature=Value('string')),
+        'predicate_token': Sequence(feature=Value('string')),
+        'predicate_token_id': Sequence(feature=Value('int32')),
+        'sentence_id': Value('int32'),
+        'label': Sequence(feature=ClassLabel(names=label_list)),
+
+    })
+
+    ds = Dataset.from_pandas(sent_df[list(features.keys())], features=features)
+    return ds
+
 
 def tokenize_and_align_labels_2(tokenizer, row):
     """ Tokenize the inputs and align the labels with them. It is particularly important to

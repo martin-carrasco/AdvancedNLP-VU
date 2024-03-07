@@ -1,30 +1,42 @@
 from transformers import AutoTokenizer
 import pandas as pd
-from utils import check_label
 
-
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
 raw_dir = 'data/raw/'
-df_dict = {
-    'token_id': [],
-    'sentence_num': [],
-    'token': [],
-    'lemma': [],
-    'upos': [],
-    'POS': [],
-    'feats': [],
-    'head': [],
-    'deprel': [],
-    'deps': [],
-    'misc': [],
-    'up:preds': [],
-    'up:args': []
-}
+
+def remove_prefix(text: str):
+    text_cp = text
+    if 'C-' in text:
+        text_cp = text_cp.replace('C-', '')
+    if 'R-' in text:
+        text_cp = text_cp.replace('R-', '')
+    return text_cp
+
+def check_label(x, i: int) -> str:
+    if len(x) < i+1:
+        return 'O'
+    else:
+        return x[i] if x[i] not in  ['_', 'V'] else 'O'
+
 
 def parse(filename: str) -> pd.DataFrame:
     """ Parse a conllu file and return a dataframe with the parsed data
     """
+    df_dict = {
+        'token_id': [],
+        'sentence_num': [],
+        'token': [],
+        'lemma': [],
+        'upos': [],
+        'POS': [],
+        'feats': [],
+        'head': [],
+        'deprel': [],
+        'deps': [],
+        'misc': [],
+        'up:preds': [],
+        'up:args': []
+    }
     with open(raw_dir + filename, 'r', encoding="utf8") as f:
         sent_cnt = -1
         for line in f.readlines():
@@ -51,7 +63,8 @@ def parse(filename: str) -> pd.DataFrame:
             df_dict['misc'].append(columns[9])
             if len(columns) > 10:
                 df_dict['up:preds'].append(columns[10])
-                df_dict['up:args'].append(columns[11:])
+                clean_args = [remove_prefix(x) for x in columns[11:]]
+                df_dict['up:args'].append(clean_args)
             else:
                 df_dict['up:preds'].append('_')
                 df_dict['up:args'].append(['_'])
@@ -109,6 +122,7 @@ def preprocessing(filename: str) -> pd.DataFrame:
 
             if i != 0:
                 new_sentence_id += 1
+
     new_df = pd.concat(df_list)
     new_df['sentence_id'] = new_df['sentence_num_clone']
     new_df = new_df.drop(['sentence_num_clone'], axis=1)
@@ -116,14 +130,3 @@ def preprocessing(filename: str) -> pd.DataFrame:
     file_name = filename.split('.')[0]
     new_df.to_csv(f'data/preprocessed/{file_name}_pp.tsv', index=False, sep='\t')
     return new_df
-
-
-#df = preprocessing('en_ewt-up-train.conllu')
-#new_df =  df.groupby('sentence_num')[['token']].apply(list)
-#print(new_df.columns)
-#print(new_df.head(5)['predicate'])
-
-
-# predicate = 'AA'
-# tokenized_input = tokenizer([text_list, predicate], is_split_into_words=True)
-# tokens = tokenizer.convert_ids_to_tokens(tokenized_input["input_ids"])
