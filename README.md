@@ -27,3 +27,14 @@ The main file is `main.py`, it can be called from the command line with the argu
     + Ex. ```python main.py model -i data.tsv -m train -t identify```
 + `-mf`: This optional argument only applies with `op_mode` is on `model` and on the `predict` model operation. It specifies the name of the model as it appears in the `models` directory.
     + Ex. ```python main.py model -i data.tsv -m predict -t identify -mf model_ident.pkl```
+
+## Assignment 3
+
+The main file is `assignement.ipynb` in the `A3/` folder. It contains the steps to train and evaluate 2 BERT-based models on the task of **Semantic Role Labeling**. To actually replot the results only the first cell specifying the dataset and the cell about model inference need to be run. However, the notebook is uploaded as-is with the evaluation of 2 already trained models. The python version is `Python 3.10.13` and `requirements.txt` contains the package information required to run the project. A similar file structure as the other assignments is required.
+
++ `data/` folder
+    + `data/raw` folder for `CONLL-U` files or raw input
+    + `data/preprocessed` for intermediate preprocessing of files
+    + `data/input` for actual input data for training/testing
+
+Some parts of the notebook cannot run without this file structure.
