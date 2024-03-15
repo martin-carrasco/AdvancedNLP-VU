@@ -2,11 +2,21 @@ import seaborn as sn
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
-from sklearn.metrics import f1_score, precision_score, recall_score
+from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
 from pp import pp_matrix
 
 
+def remove_prefix(text: str):
+    text_cp = text
+    if 'C-' in text:
+        text_cp = text_cp.replace('C-', '')
+    if 'R-' in text:
+        text_cp = text_cp.replace('R-', '')
+    return text_cp
+
 df = pd.read_csv('data/preds/classf.csv')
+#df['y'] = df['y'].apply(remove_prefix)
+#df['pred_y'] = df['pred_y'].apply(remove_prefix)
 
 
 labels = list(set(df['y'].unique()))
@@ -17,9 +27,9 @@ df_dict = {
     'recall': []
 }
 
-f1_scores =  f1_score(df["y"], df["pred_y"], average=None, labels=labels, zero_division=0)
-recall_scores =  recall_score(df["y"], df["pred_y"], average=None, labels=labels, zero_division=0)
-precision_scores =  precision_score(df["y"], df["pred_y"], average=None, labels=labels, zero_division=0)
+f1_scores =  f1_score(df["y"], df["pred_y"], average=None, zero_division=0)
+recall_scores =  recall_score(df["y"], df["pred_y"], average=None, zero_division=0)
+precision_scores =  precision_score(df["y"], df["pred_y"], average=None,  zero_division=0)
 
 for label, f1_s, recall_s, precision_s in zip(labels, f1_scores, recall_scores, precision_scores):
     df_dict['label'].append(label)
@@ -40,7 +50,8 @@ df_dict['recall'].append(recall_score(df["y"], df["pred_y"], average="weighted",
 df_scores = pd.DataFrame.from_dict(df_dict)
 df_scores.to_csv('data/preds/classf_scores.csv', index=False)
 
-cm = confusion_matrix(df['y'], df['pred_y'])
+cm = confusion_matrix(df['y'], df['pred_y'], labels = labels)
+print(cm.diagonal()/cm.sum(axis=1))
 
 columns = df['y'].unique()
 
