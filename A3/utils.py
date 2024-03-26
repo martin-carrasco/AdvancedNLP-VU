@@ -13,7 +13,7 @@ def process_df_into_ds(filename: str):
         Returns:
             ds: dataset - the processed dataset
     """
-    df, label_list = preprocessing_3(filename)
+    df, label_list = preprocessing_3(filename, force=True)
 
     features = Features({
         'id': Sequence(feature=Value('float32')),
