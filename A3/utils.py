@@ -1,5 +1,5 @@
 import numpy as np
-from preprocessing import preprocessing
+from preprocessing import preprocessing, preprocessing_3
 from datasets import Dataset, load_metric, load_dataset, Sequence, ClassLabel, Features, Value
 
 metric = load_metric("seqeval")
@@ -13,31 +13,26 @@ def process_df_into_ds(filename: str):
         Returns:
             ds: dataset - the processed dataset
     """
-    df = preprocessing(filename)
-    sent_df = df.groupby(['sentence_id']).agg(lambda x: x.tolist()).reset_index()
-    label_list = list(df['label'].unique())
+    df, label_list = preprocessing_3(filename)
 
     features = Features({
-        'token_id': Sequence(feature=Value('float32')),
-        'sentence_num': Sequence(feature=Value('int32')),
-        'token': Sequence(feature=Value('string')),
+        'id': Sequence(feature=Value('float32')),
+        'position': Sequence(feature=Value('float32')),
+        'word': Sequence(feature=Value('string')),
         'lemma': Sequence(feature=Value('string')),
-        'upos': Sequence(feature=Value('string')),
-        'POS': Sequence(feature=Value('string')),
-        'feats': Sequence(feature=Value('string')),
+        'pos_u': Sequence(feature=Value('string')),
+        'pos_tag': Sequence(feature=Value('string')),
+        'd_tag': Sequence(feature=Value('string')),
         'head': Sequence(feature=Value('string')),
-        'deprel': Sequence(feature=Value('string')),
-        'deps': Sequence(feature=Value('string')),
-        'misc': Sequence(feature=Value('string')),
-        'predicate': Sequence(feature=Value('string')),
-        'predicate_token': Sequence(feature=Value('string')),
-        'predicate_token_id': Sequence(feature=Value('int32')),
-        'sentence_id': Value('int32'),
+        'dep_tag': Sequence(feature=Value('string')),
+        'is_pred': Sequence(feature=Value('bool')),
+        'pred': Sequence(feature=Value('string')),
         'label': Sequence(feature=ClassLabel(names=label_list)),
+        'sentence_id': Value('int32'),
 
     })
 
-    ds = Dataset.from_pandas(sent_df[list(features.keys())], features=features)
+    ds = Dataset.from_pandas(df[list(features.keys())], features=features)
     return ds
 
 
