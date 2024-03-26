@@ -85,9 +85,9 @@ def tokenize_and_align_labels(tokenizer, row):
         dict
 
     """
-    pred_token = row['predicate_token'][0]
-    tok_sent = tokenizer(row["token"], is_split_into_words=True)
-    tok_whole = tokenizer(row["token"], [pred_token], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
+    pred_token = row['pred'][0]
+    tok_sent = tokenizer(row["word"], is_split_into_words=True)
+    tok_whole = tokenizer(row["word"], [pred_token], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
 
     label_ids = []
 
