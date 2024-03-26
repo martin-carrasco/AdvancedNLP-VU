@@ -12,7 +12,7 @@ def remove_prefix(text: str):
         text_cp = text_cp.replace('C-', '')
     if 'R-' in text:
         text_cp = text_cp.replace('R-', '')
-    return text_cp
+    return text_cp.replace('_', 'O')
 
 def check_label(x, i: int) -> str:
     try:
@@ -44,7 +44,7 @@ class ConLLToken:
 
         # Argument checking
         if len(data) > 11:
-            self.labels = data[11:]
+            self.labels = [remove_prefix(p) for p in data[11:]]
 class Sentence():
     def __init__(self):
         self.tokens: List[ConLLToken] = []
@@ -337,7 +337,7 @@ def preprocessing_3(filename: str, force=False) -> pd.DataFrame:
         label_list = set()
         for label in df['label']:
             label_list.update(label)
-        return df, label_list
+        return df, list(label_list)
 
     sentences: List[Sentence] = []
     buffer = []
@@ -369,5 +369,7 @@ def preprocessing_3(filename: str, force=False) -> pd.DataFrame:
     df.to_csv(f'data/preprocessed/{file_name}_pp_1.tsv', index=False, sep='\t')
 
     label_list = Sentence.get_unique_labels(sentences)
+    label_list = sorted(label_list)
+
 
     return df, label_list
