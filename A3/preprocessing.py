@@ -81,7 +81,8 @@ class Sentence():
             'dep_tag': [],
             'is_pred': [],
             'pred': [],
-            'label': []
+            'pred_base': [],
+            'label': [],
         }
 
         # Create one instance of the sentence per predicate
@@ -98,6 +99,7 @@ class Sentence():
                 'dep_tag': [],
                 'is_pred': [],
                 'pred': [],
+                'pred_base': [],
                 'label': []
             }
 
@@ -116,6 +118,7 @@ class Sentence():
                 data_dict['dep_tag'].append(tok.dep_tag)
                 data_dict['is_pred'].append(tok.is_pred)
                 data_dict['pred'].append(pred)
+                data_dict['pred_base'].append(self.predicate_base[j])
                 data_dict['label'].append(label_dict[j])
 
             # Append as list
