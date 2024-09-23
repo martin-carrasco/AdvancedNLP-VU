@@ -1,32 +1,72 @@
 from transformers import AutoTokenizer
 import os
-from typing import List
+from typing import List, Dict
 import pandas as pd
 
 
 raw_dir = 'data/raw/'
 
 def remove_prefix(text: str):
+    """ Removes the prefixes from the labels.
+
+
+        Parameters
+        ----------
+        text : str
+            The label to remove the prefix from.
+
+        Returns
+        -------
+        str
+            The label without the prefix.    
+
+    
+    """
     text_cp = text
     if 'C-' in text:
         text_cp = text_cp.replace('C-', '')
     if 'R-' in text:
         text_cp = text_cp.replace('R-', '')
+    # Replace the _ with O
     return text_cp.replace('_', 'O')
 
-def check_label(x, i: int) -> str:
+def check_label(x: str, i: int) -> str:
+    """ Check the label of the token and return the label for the predicate i.
+
+
+        Parameters
+        ----------
+        x : str
+            The label of the token.
+        i : int
+            The index of the predicate.
+        
+        Returns
+        -------
+        str
+            The label of the token for the predicate i.
+    
+    """
     try:
         label = x[i]
         return label if label != '_' else 'O'
     except:
         return 'O'
 
+class InvalidTokenException(Exception):
+    pass
+
 class ConLLToken:
-    def __init__(self, data: List, element_idx):
+    def __init__(self, data: List, element_idx, e_id):
         self.data = data # Save original data
-        self.id = int(data[0]) # Token index in CONLL
+
+        try:
+            self.id = int(data[0])
+        except: 
+            raise InvalidTokenException(f'Invalid token id: {data[0]}')
+        
         self.position = element_idx # Index in sentence
-        self.word = data[1]
+        self.token = data[1]
         self.lemma = data[2]
         self.pos_u = data[3]
         self.pos_tag = data[4]
@@ -45,7 +85,13 @@ class ConLLToken:
         # Argument checking
         if len(data) > 11:
             self.labels = [remove_prefix(p) for p in data[11:]]
-class Sentence():
+
+    def __str__(self):
+        return self.token
+    def __repr__(self):
+        return self.token
+
+class Sentence:
     def __init__(self):
         self.tokens: List[ConLLToken] = []
         self.predicates: List = []
@@ -53,15 +99,34 @@ class Sentence():
         self.labels_list_dict = []
         self.unique_labels = set()
 
-
     def add_token(self, token: ConLLToken):
+        """ Add a token to the sentence.
+        
+
+            Parameters
+            ----------
+            token : ConLLToken
+                The token to add to the sentence.
+            
+            Returns
+            -------
+            None
+        """
+
         self.tokens.append(token)
-        self.unique_labels.update(token.labels)
-        if token.is_pred:
-            self.predicates.append(token.word)
+        self.unique_labels.update(token.labels) # Update unique labels
+
+        if token.is_pred: # If it is a predicate add to the list
+            self.predicates.append(token.token)
             self.predicate_base.append(token.pred)
 
     def build_labels(self):
+        """ Build the labels for the sentence.
+
+            Returns
+            -------
+            None 
+        """
         for tok in self.tokens:
             label_dict = {}
             for i, pred in enumerate(self.predicates):
@@ -69,28 +134,28 @@ class Sentence():
             self.labels_list_dict.append(label_dict)
 
     def to_pandas(self) -> pd.DataFrame:
-        global_data_dict = {
+        global_data_dict: Dict = {
             'id': [],
             'position': [],
-            'word': [],
+            'token': [],
             'lemma': [],
             'pos_u': [],
-            'pos_tag': [],  
+            'pos_tag': [], 
             'd_tag': [],
             'head': [],
             'dep_tag': [],
             'is_pred': [],
             'pred': [],
             'pred_base': [],
-            'label': [],
+            'label': []
         }
 
         # Create one instance of the sentence per predicate
         for j, pred in enumerate(self.predicates):
-            data_dict = {
+            data_dict: Dict = {
                 'id': [],
                 'position': [],
-                'word': [],
+                'token': [],
                 'lemma': [],
                 'pos_u': [],
                 'pos_tag': [],  
@@ -109,7 +174,7 @@ class Sentence():
 
                 data_dict['id'].append(tok.id)
                 data_dict['position'].append(tok.position)
-                data_dict['word'].append(tok.word)
+                data_dict['token'].append(tok.token)
                 data_dict['lemma'].append(tok.lemma)
                 data_dict['pos_u'].append(tok.pos_u)
                 data_dict['pos_tag'].append(tok.pos_tag)
@@ -127,6 +192,12 @@ class Sentence():
 
         return pd.DataFrame.from_dict(global_data_dict)
 
+    def __str__(self):
+        return str(self.tokens)
+    
+    def __repr__(self):
+        return str(self.tokens) 
+
     @staticmethod
     def create_annotation(line_buffer: List[str]):
         sentence: Sentence = Sentence()
@@ -136,17 +207,18 @@ class Sentence():
             # No problem lines with too few characters
             if len(line_data) <= 8:
                 continue
-            # None of this punctiation
-            if '.' in line_data[0] or '-' in line_data[0]:
-                continue
-            token: ConLLToken = ConLLToken(line_data, word_idx)
+            # Punctuation is not a token
+            # if '.' in line_data[0] or '-' in line_data[0]:
+            #     continue
+            token: ConLLToken = ConLLToken(line_data, word_idx, i)
             sentence.add_token(token)
             word_idx += 1
         sentence.build_labels()
         return sentence
+
     @staticmethod
     def get_unique_labels(sentences: List) -> List[str]:
-        labels = set()
+        labels: set = set()
         for sentence in sentences:
             labels = labels.union(sentence.unique_labels)
         return list(labels)
@@ -156,7 +228,7 @@ class Sentence():
 def parse(filename: str) -> pd.DataFrame:
     """ Parse a conllu file and return a dataframe with the parsed data
     """
-    df_dict = {
+    df_dict: Dict = {
         'token_id': [],
         'sentence_num': [],
         'token': [],
@@ -206,9 +278,19 @@ def parse(filename: str) -> pd.DataFrame:
 
 def preprocessing(filename: str) -> pd.DataFrame:
     """  Preprocess the conllu file and return a dataframe with the preprocessed data
+
+
+        Parameters
+        ----------
+        filename : str
+            The name of the file to preprocess.
+        
+        Returns
+        -------
+        pd.DataFrame
+            The preprocessed data in a pandas dataframe.
     """
     df = parse(filename)
-
     df_list = []
 
     # Get unique sentence ids
@@ -334,6 +416,7 @@ def preprocessing_2(filename: str) -> pd.DataFrame:
 
 def preprocessing_3(filename: str, force=False) -> pd.DataFrame:
     file_name = filename.split('.')[0]
+
     # If file is already preprocessed not force it
     if os.path.exists(f'data/preprocessed/{file_name}_pp_1.tsv') and not force:
         df = pd.read_csv(f'data/preprocessed/{file_name}_pp_1.tsv', sep='\t')
@@ -343,18 +426,26 @@ def preprocessing_3(filename: str, force=False) -> pd.DataFrame:
         return df, list(label_list)
 
     sentences: List[Sentence] = []
-    buffer = []
+    buffer: List = []
+
     # Create list of sentences
     with open(raw_dir + filename, 'r', encoding="utf8") as f:
         for line in f.readlines():
-            if line.startswith('#'): continue
+            # Coments
+            if line.startswith('#'):
+                continue
             line = line.strip()
             columns = line.split('\t')
 
             #TODO Can this change ? 
             # Invalid lines are not added
             if len(columns) == 0 or len(line) < 5:
-                sent: Sentence = Sentence.create_annotation(buffer)
+                try:
+                    sent: Sentence = Sentence.create_annotation(buffer)
+                except InvalidTokenException as e:
+                    print('Skipping sentence with invalid format')
+                    buffer = []
+                    continue
                 buffer = []
                 sentences.append(sent)
                 continue
@@ -365,6 +456,7 @@ def preprocessing_3(filename: str, force=False) -> pd.DataFrame:
         if len(buffer) > 0:
             sent: Sentence = Sentence.create_annotation(buffer)
             sentences.append(sent)
+
     # Create the final dataframe
     df_list = [sent.to_pandas().assign(sentence_id=i) for i, sent in enumerate(sentences)]
 

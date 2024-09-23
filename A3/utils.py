@@ -1,5 +1,5 @@
 import numpy as np
-from preprocessing import preprocessing, preprocessing_3
+from A3.preprocessing import preprocessing, preprocessing_3
 from datasets import Dataset, load_metric, load_dataset, Sequence, ClassLabel, Features, Value
 
 metric = load_metric("seqeval")
@@ -18,7 +18,7 @@ def process_df_into_ds(filename: str):
     features = Features({
         'id': Sequence(feature=Value('float32')),
         'position': Sequence(feature=Value('float32')),
-        'word': Sequence(feature=Value('string')),
+        'token': Sequence(feature=Value('string')),
         'lemma': Sequence(feature=Value('string')),
         'pos_u': Sequence(feature=Value('string')),
         'pos_tag': Sequence(feature=Value('string')),
@@ -27,6 +27,7 @@ def process_df_into_ds(filename: str):
         'dep_tag': Sequence(feature=Value('string')),
         'is_pred': Sequence(feature=Value('bool')),
         'pred': Sequence(feature=Value('string')),
+        'pred_base': Sequence(feature=Value('string')),
         'label': Sequence(feature=ClassLabel(names=label_list)),
         'sentence_id': Value('int32'),
 
@@ -49,8 +50,8 @@ def tokenize_and_align_labels_2(tokenizer, row):
     """
     pred_token = row['pred'][0]
     pred_token_base = row['pred_base'][0]
-    tok_sent = tokenizer(row["word"], is_split_into_words=True)
-    tok_whole = tokenizer(row["word"], [pred_token, pred_token_base], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
+    tok_sent = tokenizer(row["token"], is_split_into_words=True)
+    tok_whole = tokenizer(row["token"], [pred_token, pred_token_base], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
 
     label_ids = []
 
@@ -81,8 +82,8 @@ def tokenize_and_align_labels(tokenizer, row):
 
     """
     pred_token = row['pred'][0]
-    tok_sent = tokenizer(row["word"], is_split_into_words=True)
-    tok_whole = tokenizer(row["word"], [pred_token], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
+    tok_sent = tokenizer(row["token"], is_split_into_words=True)
+    tok_whole = tokenizer(row["token"], [pred_token], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
 
     label_ids = []
 
