@@ -1,8 +1,8 @@
 import numpy as np
 from A3.preprocessing import preprocessing, preprocessing_3
-from datasets import Dataset, load_metric, load_dataset, Sequence, ClassLabel, Features, Value
+from datasets import Dataset, load, load_dataset, Sequence, ClassLabel, Features, Value
 
-metric = load_metric("seqeval")
+metric = load("seqeval")
 
 label_all_tokens = False
 
