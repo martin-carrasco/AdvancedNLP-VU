@@ -1,6 +1,7 @@
 import numpy as np
 from A3.preprocessing import preprocessing, preprocessing_3
-from datasets import Dataset, load, load_dataset, Sequence, ClassLabel, Features, Value
+from datasets import Dataset, load_dataset, Sequence, ClassLabel, Features, Value
+from evaluate import load
 
 metric = load("seqeval")
 
