@@ -9,30 +9,6 @@ from datasets import Dataset, load_dataset, Sequence, ClassLabel, Features, Valu
 
 metric = load("seqeval")
 
-def format_label(text: str):
-    """ Format the label correctly.
-
-
-        Parameters
-        ----------
-        text : str
-            The label to remove the prefix from.
-
-        Returns
-        -------
-        str
-            The label without the prefix.    
-    """
-
-    if text == '_':
-        return 'O'
-    text = 'B-' + text
-    # if 'C-' in text:
-    #     text_cp = text_cp.replace('C-', '')
-    # if 'R-' in text:
-    #     text_cp = text_cp.replace('R-', '')
-    # Replace the _ with O
-    return text
 
 
 def tokenize_and_align(tokenizer, row):

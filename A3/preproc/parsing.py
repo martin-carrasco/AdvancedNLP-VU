@@ -1,8 +1,9 @@
 from typing import List, Dict
 import os
-from A3.preproc.structures import Sentence, InvalidTokenException
 import pandas as pd
 import ast
+
+from A3.preproc.structures import Sentence, InvalidTokenException
 
 RAW_DIR = 'data/raw/'
 

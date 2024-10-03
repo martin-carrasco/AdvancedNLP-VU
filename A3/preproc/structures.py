@@ -1,6 +1,5 @@
 from typing import List, Dict
 import pandas as pd
-from A3.preproc.utils import format_label
 
 class InvalidTokenException(Exception):
     pass
@@ -144,3 +143,29 @@ class Sentence:
         for sentence in sentences:
             labels = labels.union(sentence.unique_labels)
         return list(labels)
+
+
+def format_label(text: str):
+    """ Format the label correctly.
+
+
+        Parameters
+        ----------
+        text : str
+            The label to remove the prefix from.
+
+        Returns
+        -------
+        str
+            The label without the prefix.    
+    """
+
+    if text == '_':
+        return 'O'
+    text = 'B-' + text
+    # if 'C-' in text:
+    #     text_cp = text_cp.replace('C-', '')
+    # if 'R-' in text:
+    #     text_cp = text_cp.replace('R-', '')
+    # Replace the _ with O
+    return text
