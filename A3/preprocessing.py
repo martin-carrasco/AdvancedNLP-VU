@@ -2,6 +2,8 @@ from transformers import AutoTokenizer
 import os
 from typing import List, Dict
 import pandas as pd
+import os
+from A3.preproc.structures import Sentence, ConLLToken, InvalidTokenException
 
 
 raw_dir = 'data/raw/'
@@ -22,7 +24,7 @@ def remove_prefix(text: str):
 
     
     """
-    text_cp = text
+    text_cp = 'B-' + text
     if 'C-' in text:
         text_cp = text_cp.replace('C-', '')
     if 'R-' in text:
@@ -53,175 +55,6 @@ def check_label(x: str, i: int) -> str:
     except:
         return 'O'
 
-class InvalidTokenException(Exception):
-    pass
-
-class ConLLToken:
-    def __init__(self, data: List, element_idx, e_id):
-        self.data = data # Save original data
-
-        try:
-            self.id = int(data[0])
-        except: 
-            raise InvalidTokenException(f'Invalid token id: {data[0]}')
-        
-        self.position = element_idx # Index in sentence
-        self.token = data[1]
-        self.lemma = data[2]
-        self.pos_u = data[3]
-        self.pos_tag = data[4]
-        self.d_tag = data[5]
-        self.head = data[6]
-        self.dep_tag = data[7]
-        self.is_pred = False
-        self.pred = None
-        self.labels = []
-
-        # Predicate checking
-        if len(data) > 10 and data[10] != '_':
-            self.is_pred = True
-            self.pred = data[10]
-
-        # Argument checking
-        if len(data) > 11:
-            self.labels = [remove_prefix(p) for p in data[11:]]
-
-    def __str__(self):
-        return self.token
-    def __repr__(self):
-        return self.token
-
-class Sentence:
-    def __init__(self):
-        self.tokens: List[ConLLToken] = []
-        self.predicates: List = []
-        self.predicate_base: List = []
-        self.labels_list_dict = []
-        self.unique_labels = set()
-
-    def add_token(self, token: ConLLToken):
-        """ Add a token to the sentence.
-        
-
-            Parameters
-            ----------
-            token : ConLLToken
-                The token to add to the sentence.
-            
-            Returns
-            -------
-            None
-        """
-
-        self.tokens.append(token)
-        self.unique_labels.update(token.labels) # Update unique labels
-
-        if token.is_pred: # If it is a predicate add to the list
-            self.predicates.append(token.token)
-            self.predicate_base.append(token.pred)
-
-    def build_labels(self):
-        """ Build the labels for the sentence.
-
-            Returns
-            -------
-            None 
-        """
-        for tok in self.tokens:
-            label_dict = {}
-            for i, pred in enumerate(self.predicates):
-                label_dict[i] = tok.labels[i]
-            self.labels_list_dict.append(label_dict)
-
-    def to_pandas(self) -> pd.DataFrame:
-        global_data_dict: Dict = {
-            'id': [],
-            'position': [],
-            'token': [],
-            'lemma': [],
-            'pos_u': [],
-            'pos_tag': [], 
-            'd_tag': [],
-            'head': [],
-            'dep_tag': [],
-            'is_pred': [],
-            'pred': [],
-            'pred_base': [],
-            'label': []
-        }
-
-        # Create one instance of the sentence per predicate
-        for j, pred in enumerate(self.predicates):
-            data_dict: Dict = {
-                'id': [],
-                'position': [],
-                'token': [],
-                'lemma': [],
-                'pos_u': [],
-                'pos_tag': [],  
-                'd_tag': [],
-                'head': [],
-                'dep_tag': [],
-                'is_pred': [],
-                'pred': [],
-                'pred_base': [],
-                'label': []
-            }
-
-            # Iterate over all the tokens 
-            for i, tok in enumerate(self.tokens):
-                label_dict = self.labels_list_dict[i] 
-
-                data_dict['id'].append(tok.id)
-                data_dict['position'].append(tok.position)
-                data_dict['token'].append(tok.token)
-                data_dict['lemma'].append(tok.lemma)
-                data_dict['pos_u'].append(tok.pos_u)
-                data_dict['pos_tag'].append(tok.pos_tag)
-                data_dict['d_tag'].append(tok.d_tag)
-                data_dict['head'].append(tok.head)
-                data_dict['dep_tag'].append(tok.dep_tag)
-                data_dict['is_pred'].append(tok.is_pred)
-                data_dict['pred'].append(pred)
-                data_dict['pred_base'].append(self.predicate_base[j])
-                data_dict['label'].append(label_dict[j])
-
-            # Append as list
-            for key in data_dict.keys():
-                global_data_dict[key].append(data_dict[key])
-
-        return pd.DataFrame.from_dict(global_data_dict)
-
-    def __str__(self):
-        return str(self.tokens)
-    
-    def __repr__(self):
-        return str(self.tokens) 
-
-    @staticmethod
-    def create_annotation(line_buffer: List[str]):
-        sentence: Sentence = Sentence()
-        word_idx = 0
-        for i, line in enumerate(line_buffer):
-            line_data = line.split('\t')
-            # No problem lines with too few characters
-            if len(line_data) <= 8:
-                continue
-            # Punctuation is not a token
-            # if '.' in line_data[0] or '-' in line_data[0]:
-            #     continue
-            token: ConLLToken = ConLLToken(line_data, word_idx, i)
-            sentence.add_token(token)
-            word_idx += 1
-        sentence.build_labels()
-        return sentence
-
-    @staticmethod
-    def get_unique_labels(sentences: List) -> List[str]:
-        labels: set = set()
-        for sentence in sentences:
-            labels = labels.union(sentence.unique_labels)
-        return list(labels)
 
 
 
