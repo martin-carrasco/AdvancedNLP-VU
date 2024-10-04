@@ -28,6 +28,8 @@ def tokenize_and_align(tokenizer, row):
     tok_whole = tokenizer(row["token"], [pred_token, pred_token_base], padding='max_length', max_length=64, truncation=True, is_split_into_words=True)
 
     label_ids = []
+    pred_idx = row['is_pred'].index(True)
+    wordpiece = tokenizer.convert_ids_to_tokens(tok_whole['input_ids'])
 
     for i, word_idx in enumerate(tok_whole.word_ids()):
         if word_idx is None:
@@ -37,9 +39,25 @@ def tokenize_and_align(tokenizer, row):
             # If the token is part of the predicate do not add a label
             label_ids.append(-100)
         else: 
+            if wordpiece[i].startswith("##"):
+                label_ids.append(-100)
+                continue
             # Set the label of the first token of each word
             label_ids.append(row['label'][word_idx])
 
+    token_type_ids = [0] * len(tok_whole['input_ids'])
+
+    # Add token_type_ids
+    for i, word_idx in enumerate(tok_whole.word_ids()):
+        # If it is a special token do not add a label
+        if word_idx is None:
+            continue
+        elif wordpiece[i].startswith("##"):
+            continue
+        elif word_idx == pred_idx:
+            token_type_ids[i] = 1
+            break
+    tok_whole["token_type_ids"] = token_type_ids
     tok_whole["labels"] = label_ids
     return tok_whole 
 
