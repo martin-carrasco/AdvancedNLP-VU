@@ -163,9 +163,9 @@ def format_label(text: str):
     if text == '_':
         return 'O'
     text = 'B-' + text
-    # if 'C-' in text:
-    #     text_cp = text_cp.replace('C-', '')
-    # if 'R-' in text:
-    #     text_cp = text_cp.replace('R-', '')
+    if 'C-' in text:
+        text = text.replace('C-', '')
+    if 'R-' in text:
+        text = text.replace('R-', '')
     # Replace the _ with O
     return text
