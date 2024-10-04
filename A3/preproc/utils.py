@@ -66,9 +66,9 @@ def tokenize_and_align(tokenizer, row):
             idx_cnt += 1
             scatter_idx.append(idx_cnt)
 
-    tok_whole["token_type_ids"] = token_type_ids
+    tok_whole["token_type_ids"] = token_type_ids.long()
     tok_whole["labels"] = label_ids
-    tok_whole["scatter_idx"] = torch.tensor(scatter_idx)
+    tok_whole["scatter_idx"] = torch.tensor(scatter_idx).long()
     return tok_whole 
 
 def compute_metrics(p, label_list):
