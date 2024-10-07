@@ -1,309 +1,269 @@
-sent,pred,arg_pos,label,pred_frame,test_name,test_case,capability
-There was a book,was,3,ARG1,be.02,CA0-R - T1,0,CA0-R
-There lived a person,lived,3,ARG1,live.01,CA0-R - T1,1,CA0-R
-There lied a book,lied,3,ARG1,lie.07,CA0-R - T1,2,CA0-R
-There existed a chair,existed,3,ARG1,exist.01,CA0-R - T1,3,CA0-R
-There lied a phone,lied,3,ARG1,lie.07,CA0-R - T1,4,CA0-R
-There died a person,died,3,ARG1,die.01,CA0-R - T1,5,CA0-R
-There exists a building,exists,3,ARG1,exist.01,CA0-R - T1,6,CA0-R
-There was a phone,was,3,ARG1,be.02,CA0-R - T1,7,CA0-R
-There lays a screen,lays,3,ARG1,lie.07,CA0-R - T1,8,CA0-R
-There remains a person,remains,3,ARG1,remain.01,CA0-R - T1,9,CA0-R
-There lays a book,lays,3,ARG1,lie.07,CA0-R - T1,10,CA0-R
-There hangs a TV,hangs,3,ARG1,hang.01,CA0-R - T1,11,CA0-R
-Here exists a book,exists,3,ARG1,exist.01,CA0-R - T1,12,CA0-R
-Here runs a computer,runs,3,ARG1,run.01,CA0-R - T1,13,CA0-R
-Here exists a phone,exists,3,ARG1,exist.01,CA0-R - T1,14,CA0-R
-Here swings a chair,swings,3,ARG1,swing.02,CA0-R - T1,15,CA0-R
-Here spawns a car,spawns,3,ARG1,spawn.01,CA0-R - T1,16,CA0-R
-Here exists a building,exists,3,ARG1,exist.01,CA0-R - T1,17,CA0-R
-Here comes the sun,comes,3,ARG1,come.01,CA0-R - T1,18,CA0-R
-Here projects a shadow,projects,3,ARG1,project.01,CA0-R - T1,19,CA0-R
-Here was a building,was,3,ARG1,be.02,CA0-R - T1,20,CA0-R
-Here is a phone,is,3,ARG1,be.02,CA0-R - T1,21,CA0-R
-Here lays a car,lays,3,ARG1,lie.07,CA0-R - T1,22,CA0-R
-Here grows a tree,grows,3,ARG1,grow.03,CA0-R - T1,23,CA0-R
-Here floats a computer,floats,3,ARG1,float.01,CA0-R - T1,24,CA0-R
-Nobody that slowsly and happily watches up,watches,1,ARG1,watch.01,CA0-D - T1,0,CA0-D
-Somebody which inaudibly yet angrily cries everything,cries,1,ARG1,cry.01,CA0-D - T1,1,CA0-D
-Everybody whom slowsly and excitedly cries .,cries,1,ARG1,cry.01,CA0-D - T1,2,CA0-D
-Everybody which unintentionally and excitedly cries Twitter,cries,1,ARG1,cry.01,CA0-D - T1,3,CA0-D
-Anybody who inaudibly yet sadly eats breakfast,eats,1,ARG1,eat.01,CA0-D - T1,4,CA0-D
-Somebody whom swiftly and sadly uses ______,uses,1,ARG1,use.01,CA0-D - T1,5,CA0-D
-Somebody that swiftly or happily cries cookies,cries,1,ARG1,cry.01,CA0-D - T1,6,CA0-D
-Somebody that slowsly but angrily drinks me,drinks,1,ARG1,drink.01,CA0-D - T1,7,CA0-D
-"Everybody which swiftly and calmly uses """,uses,1,ARG1,use.01,CA0-D - T1,8,CA0-D
-Nobody whom slowsly yet sadly drinks together,drinks,1,ARG1,drink.01,CA0-D - T1,9,CA0-D
-Somebody who inadvertedly or excitedly cries broccoli,cries,1,ARG1,cry.01,CA0-D - T1,10,CA0-D
-Somebody whom slowsly or excitedly eats herself,eats,1,ARG1,eat.01,CA0-D - T1,11,CA0-D
-"Somebody whom slowsly but happily eats """,eats,1,ARG1,eat.01,CA0-D - T1,12,CA0-D
-Somebody who unintentionally and happily uses wolf,uses,1,ARG1,use.01,CA0-D - T1,13,CA0-D
-Anybody which unintentionally yet angrily drinks not,drinks,1,ARG1,drink.01,CA0-D - T1,14,CA0-D
-Anybody that inadvertedly or excitedly cries the,cries,1,ARG1,cry.01,CA0-D - T1,15,CA0-D
-Everybody who swiftly but excitedly cries alone,cries,1,ARG1,cry.01,CA0-D - T1,16,CA0-D
-Somebody which inadvertedly but calmly uses me,uses,1,ARG1,use.01,CA0-D - T1,17,CA0-D
-Anybody whom swiftly but sadly cries the,cries,1,ARG1,cry.01,CA0-D - T1,18,CA0-D
-Nobody whom inadvertedly or calmly eats Twitter,eats,1,ARG1,eat.01,CA0-D - T1,19,CA0-D
-Nobody who slowsly and angrily cries tea,cries,1,ARG1,cry.01,CA0-D - T1,20,CA0-D
-Somebody whom inaudibly yet angrily eats marijuana,eats,1,ARG1,eat.01,CA0-D - T1,21,CA0-D
-Everybody which unintentionally yet excitedly uses here,uses,1,ARG1,use.01,CA0-D - T1,22,CA0-D
-Somebody that swiftly yet angrily drinks --,drinks,1,ARG1,drink.01,CA0-D - T1,23,CA0-D
-Everybody whom swiftly and calmly watches nothing,watches,1,ARG1,watch.01,CA0-D - T1,24,CA0-D
-The person beside this picture is quietly,is,1,ARG0,be.02,CA1-D - T1,0,CA1-D
-The child under me still is well,is,1,ARG0,be.02,CA1-D - T1,1,CA1-D
-The doctor on her bed is quietly,is,1,ARG0,be.02,CA1-D - T1,2,CA1-D
-The cat on the car is badly,is,1,ARG0,be.02,CA1-D - T1,3,CA1-D
-The president under me there is badly,is,1,ARG0,be.02,CA1-D - T1,4,CA1-D
-The cat under me tonight is badly,is,1,ARG0,be.02,CA1-D - T1,5,CA1-D
-The person beside his bed is badly,is,1,ARG0,be.02,CA1-D - T1,6,CA1-D
-The teacher beside your table is quietly,is,1,ARG0,be.02,CA1-D - T1,7,CA1-D
-The doctor beside my car is badly,is,1,ARG0,be.02,CA1-D - T1,8,CA1-D
-The child beside these pictures is badly,is,1,ARG0,be.02,CA1-D - T1,9,CA1-D
-The president in a car is well,is,1,ARG0,be.02,CA1-D - T1,10,CA1-D
-The person beside the bed is well,is,1,ARG0,be.02,CA1-D - T1,11,CA1-D
-The cat beside me still is badly,is,1,ARG0,be.02,CA1-D - T1,12,CA1-D
-The child on these pages is well,is,1,ARG0,be.02,CA1-D - T1,13,CA1-D
-The president under a car is well,is,1,ARG0,be.02,CA1-D - T1,14,CA1-D
-The president under your table is badly,is,1,ARG0,be.02,CA1-D - T1,15,CA1-D
-The child under me today is quietly,is,1,ARG0,be.02,CA1-D - T1,16,CA1-D
-The person on a wheelchair is badly,is,1,ARG0,be.02,CA1-D - T1,17,CA1-D
-The child on both cases is well,is,1,ARG0,be.02,CA1-D - T1,18,CA1-D
-The doctor beside their bed is quietly,is,1,ARG0,be.02,CA1-D - T1,19,CA1-D
-The teacher beside the bed is quietly,is,1,ARG0,be.02,CA1-D - T1,20,CA1-D
-The cat in both hands is badly,is,1,ARG0,be.02,CA1-D - T1,21,CA1-D
-The doctor in a tree is badly,is,1,ARG0,be.02,CA1-D - T1,22,CA1-D
-The teacher in me also is badly,is,1,ARG0,be.02,CA1-D - T1,23,CA1-D
-The child beside that body is well,is,1,ARG0,be.02,CA1-D - T1,24,CA1-D
-There is a fantastic flower shop in Mexico,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Tanzania,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Iran,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Bangladesh,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Myanmar,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Mexico,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Ukraine,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in United Kingdom,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Sudan,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-There is a fantastic flower shop in Philippines,is,7,ARGM-LOC,be.02,CA-LOC-L - T1,0,CA-LOC-L
-My mother used to live in India,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Uganda,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Malaysia,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Myanmar,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Thailand,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Iraq,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in United States,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Mozambique,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Ukraine,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-My mother used to live in Uzbekistan,live,6,ARGM-LOC,live.01,CA-LOC-L - T1,1,CA-LOC-L
-I bought flowers in Richmond,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Austin,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Aurora,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Fremont,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Madison,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Glendale,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Henderson,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Toledo,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Lincoln,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I bought flowers in Wichita,bought,4,ARGM-LOC,buy.01,CA-LOC-L - T1,2,CA-LOC-L
-I never go to the gym,go,1,ARGM-NEG,go.01,CA-NEG-A - T1,0,CA-NEG-A
-I never eat meat,eat,1,ARGM-NEG,eat.01,CA-NEG-A - T1,1,CA-NEG-A
-I never drink alcohol,drink,1,ARGM-NEG,drink.01,CA-NEG-A - T1,2,CA-NEG-A
-I never watch TV,watch,1,ARGM-NEG,watch.01,CA-NEG-A - T1,3,CA-NEG-A
-I never play video games,play,1,ARGM-NEG,play.01,CA-NEG-A - T1,4,CA-NEG-A
-I never read books,read,1,ARGM-NEG,read.01,CA-NEG-A - T1,5,CA-NEG-A
-He never goes to the gym,goes,1,ARGM-NEG,go.01,CA-NEG-A - T1,6,CA-NEG-A
-He never eats meat,eats,1,ARGM-NEG,eat.01,CA-NEG-A - T1,7,CA-NEG-A
-He never drinks alcohol,drinks,1,ARGM-NEG,drink.01,CA-NEG-A - T1,8,CA-NEG-A
-He never watches TV,watches,1,ARGM-NEG,watch.01,CA-NEG-A - T1,9,CA-NEG-A
-I hardly go to the gym,go,1,ARGM-NEG,go.01,CA-NEG-A - T1,10,CA-NEG-A
-I hardly eat meat,eat,1,ARGM-NEG,eat.01,CA-NEG-A - T1,11,CA-NEG-A
-I hardly drink alcohol,drink,1,ARGM-NEG,drink.01,CA-NEG-A - T1,12,CA-NEG-A
-I hardly watch TV,watch,1,ARGM-NEG,watch.01,CA-NEG-A - T1,13,CA-NEG-A
-I hardly play video games,play,1,ARGM-NEG,play.01,CA-NEG-A - T1,14,CA-NEG-A
-I hardly read books,read,1,ARGM-NEG,read.01,CA-NEG-A - T1,15,CA-NEG-A
-He hardly goes to the gym,goes,1,ARGM-NEG,go.01,CA-NEG-A - T1,16,CA-NEG-A
-He hardly eats meat,eats,1,ARGM-NEG,eat.01,CA-NEG-A - T1,17,CA-NEG-A
-He hardly drinks alcohol,drinks,1,ARGM-NEG,drink.01,CA-NEG-A - T1,18,CA-NEG-A
-He hardly watches TV,watches,1,ARGM-NEG,watch.01,CA-NEG-A - T1,19,CA-NEG-A
-I rarely go to the gym,go,1,ARGM-NEG,go.01,CA-NEG-A - T1,20,CA-NEG-A
-I rarely eat meat,eat,1,ARGM-NEG,eat.01,CA-NEG-A - T1,21,CA-NEG-A
-I rarely drink alcohol,drink,1,ARGM-NEG,drink.01,CA-NEG-A - T1,22,CA-NEG-A
-I rarely watch TV,watch,1,ARGM-NEG,watch.01,CA-NEG-A - T1,23,CA-NEG-A
-I rarely play video games,play,1,ARGM-NEG,play.01,CA-NEG-A - T1,24,CA-NEG-A
-I rarely read books,read,1,ARGM-NEG,read.01,CA-NEG-A - T1,25,CA-NEG-A
-He rarely goes to the gym,goes,1,ARGM-NEG,go.01,CA-NEG-A - T1,26,CA-NEG-A
-He rarely eats meat,eats,1,ARGM-NEG,eat.01,CA-NEG-A - T1,27,CA-NEG-A
-He rarely drinks alcohol,drinks,1,ARGM-NEG,drink.01,CA-NEG-A - T1,28,CA-NEG-A
-He rarely watches TV,watches,1,ARGM-NEG,watch.01,CA-NEG-A - T1,29,CA-NEG-A
-I seldom go to the gym,go,1,ARGM-NEG,go.01,CA-NEG-A - T1,30,CA-NEG-A
-I seldom eat meat,eat,1,ARGM-NEG,eat.01,CA-NEG-A - T1,31,CA-NEG-A
-I seldom drink alcohol,drink,1,ARGM-NEG,drink.01,CA-NEG-A - T1,32,CA-NEG-A
-I seldom watch TV,watch,1,ARGM-NEG,watch.01,CA-NEG-A - T1,33,CA-NEG-A
-I seldom play video games,play,1,ARGM-NEG,play.01,CA-NEG-A - T1,34,CA-NEG-A
-I seldom read books,read,1,ARGM-NEG,read.01,CA-NEG-A - T1,35,CA-NEG-A
-He seldom goes to the gym,goes,1,ARGM-NEG,go.01,CA-NEG-A - T1,36,CA-NEG-A
-He seldom eats meat,eats,1,ARGM-NEG,eat.01,CA-NEG-A - T1,37,CA-NEG-A
-He seldom drinks alcohol,drinks,1,ARGM-NEG,drink.01,CA-NEG-A - T1,38,CA-NEG-A
-He seldom watches TV,watches,1,ARGM-NEG,watch.01,CA-NEG-A - T1,39,CA-NEG-A
-I barely go to the gym,go,1,ARGM-NEG,go.01,CA-NEG-A - T1,40,CA-NEG-A
-I barely eat meat,eat,1,ARGM-NEG,eat.01,CA-NEG-A - T1,41,CA-NEG-A
-I barely drink alcohol,drink,1,ARGM-NEG,drink.01,CA-NEG-A - T1,42,CA-NEG-A
-I barely watch TV,watch,1,ARGM-NEG,watch.01,CA-NEG-A - T1,43,CA-NEG-A
-I barely play video games,play,1,ARGM-NEG,play.01,CA-NEG-A - T1,44,CA-NEG-A
-I barely read books,read,1,ARGM-NEG,read.01,CA-NEG-A - T1,45,CA-NEG-A
-He barely goes to the gym,goes,1,ARGM-NEG,go.01,CA-NEG-A - T1,46,CA-NEG-A
-He barely eats meat,eats,1,ARGM-NEG,eat.01,CA-NEG-A - T1,47,CA-NEG-A
-He barely drinks alcohol,drinks,1,ARGM-NEG,drink.01,CA-NEG-A - T1,48,CA-NEG-A
-He barely watches TV,watches,1,ARGM-NEG,watch.01,CA-NEG-A - T1,49,CA-NEG-A
-I visited my grandmother recently,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I visited my grandmother last week,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I visited my grandmother last month,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I visited my grandmother yesterday,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I visited my grandmother this morning,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I visited my grandmother last night,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I visited my grandmother last year,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I visited my grandmother recently,my,4,ARGM-TMP,visit.01,CA-TMP-F - T1,0,CA-TMP-F
-I ate a cake yesterday,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-I ate a cake last week,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-I ate a cake last month,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-I ate a cake yesterday,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-I ate a cake this morning,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-I ate a cake last night,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-I ate a cake last year,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-I ate a cake recently,a,4,ARGM-TMP,eat.01,CA-TMP-F - T1,1,CA-TMP-F
-The concert begins tonight,begins,3,ARGM-TMP,begin.01,CA-TMP-F - T2,0,CA-TMP-F
-The concert begins tomorrow,begins,3,ARGM-TMP,begin.01,CA-TMP-F - T2,0,CA-TMP-F
-The concert begins today,begins,3,ARGM-TMP,begin.01,CA-TMP-F - T2,0,CA-TMP-F
-The concert begins this afternoon,begins,3,ARGM-TMP,begin.01,CA-TMP-F - T2,0,CA-TMP-F
-The concert begins tonight,begins,3,ARGM-TMP,begin.01,CA-TMP-F - T2,0,CA-TMP-F
-Her car arrives today,arrives,3,ARGM-TMP,arrive.01,CA-TMP-F - T2,1,CA-TMP-F
-Her car arrives tomorrow,arrives,3,ARGM-TMP,arrive.01,CA-TMP-F - T2,1,CA-TMP-F
-Her car arrives today,arrives,3,ARGM-TMP,arrive.01,CA-TMP-F - T2,1,CA-TMP-F
-Her car arrives this afternoon,arrives,3,ARGM-TMP,arrive.01,CA-TMP-F - T2,1,CA-TMP-F
-Her car arrives tonight,arrives,3,ARGM-TMP,arrive.01,CA-TMP-F - T2,1,CA-TMP-F
-My brithday is tomorrow,is,3,ARGM-TMP,be.02,CA-TMP-F - T2,2,CA-TMP-F
-My brithday is tomorrow,is,3,ARGM-TMP,be.02,CA-TMP-F - T2,2,CA-TMP-F
-My brithday is today,is,3,ARGM-TMP,be.02,CA-TMP-F - T2,2,CA-TMP-F
-My brithday is this afternoon,is,3,ARGM-TMP,be.02,CA-TMP-F - T2,2,CA-TMP-F
-My brithday is tonight,is,3,ARGM-TMP,be.02,CA-TMP-F - T2,2,CA-TMP-F
-I will have a party tonight,have,5,ARGM-TMP,have.04,CA-TMP-F - T3,0,CA-TMP-F
-I will have a party next week,have,5,ARGM-TMP,have.04,CA-TMP-F - T3,0,CA-TMP-F
-I will have a party next month,have,5,ARGM-TMP,have.04,CA-TMP-F - T3,0,CA-TMP-F
-I will have a party next year,have,5,ARGM-TMP,have.04,CA-TMP-F - T3,0,CA-TMP-F
-I will have a party tomorrow,have,5,ARGM-TMP,have.04,CA-TMP-F - T3,0,CA-TMP-F
-I will have a party tonight,have,5,ARGM-TMP,have.04,CA-TMP-F - T3,0,CA-TMP-F
-He will go to the park tomorrow,go,6,ARGM-TMP,go.01,CA-TMP-F - T3,1,CA-TMP-F
-He will go to the park next week,go,6,ARGM-TMP,go.01,CA-TMP-F - T3,1,CA-TMP-F
-He will go to the park next month,go,6,ARGM-TMP,go.01,CA-TMP-F - T3,1,CA-TMP-F
-He will go to the park next year,go,6,ARGM-TMP,go.01,CA-TMP-F - T3,1,CA-TMP-F
-He will go to the park tomorrow,go,6,ARGM-TMP,go.01,CA-TMP-F - T3,1,CA-TMP-F
-He will go to the park tonight,go,6,ARGM-TMP,go.01,CA-TMP-F - T3,1,CA-TMP-F
-I visited my grandmother last May,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,0,CA-TMP-D
-I visited my grandmother last January,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,1,CA-TMP-D
-I visited my grandmother last February,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,2,CA-TMP-D
-I visited my grandmother last March,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,3,CA-TMP-D
-I visited my grandmother last April,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,4,CA-TMP-D
-I visited my grandmother last May,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,5,CA-TMP-D
-I visited my grandmother last June,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,6,CA-TMP-D
-I visited my grandmother last July,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,7,CA-TMP-D
-I visited my grandmother last August,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,8,CA-TMP-D
-I visited my grandmother last September,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,9,CA-TMP-D
-I visited my grandmother last October,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,10,CA-TMP-D
-I visited my grandmother last November,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,11,CA-TMP-D
-I visited my grandmother last December,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,12,CA-TMP-D
-I visited my grandmother last Monday,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,13,CA-TMP-D
-I visited my grandmother last Tuesday,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,14,CA-TMP-D
-I visited my grandmother last Wednesday,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,15,CA-TMP-D
-I visited my grandmother last Thursday,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,16,CA-TMP-D
-I visited my grandmother last Friday,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,17,CA-TMP-D
-I visited my grandmother last Saturday,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,18,CA-TMP-D
-I visited my grandmother last Sunday,my,5,ARGM-TMP,"['I visited my grandmother last April', 2, 5, 'ARGM-TMP', 'visit.01']",CA-TMP-D - T1,19,CA-TMP-D
-I will have a party next Saturday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,20,CA-TMP-D
-I will have a party next January,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,21,CA-TMP-D
-I will have a party next February,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,22,CA-TMP-D
-I will have a party next March,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,23,CA-TMP-D
-I will have a party next April,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,24,CA-TMP-D
-I will have a party next May,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,25,CA-TMP-D
-I will have a party next June,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,26,CA-TMP-D
-I will have a party next July,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,27,CA-TMP-D
-I will have a party next August,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,28,CA-TMP-D
-I will have a party next September,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,29,CA-TMP-D
-I will have a party next October,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,30,CA-TMP-D
-I will have a party next November,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,31,CA-TMP-D
-I will have a party next December,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,32,CA-TMP-D
-I will have a party next Monday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,33,CA-TMP-D
-I will have a party next Tuesday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,34,CA-TMP-D
-I will have a party next Wednesday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,35,CA-TMP-D
-I will have a party next Thursday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,36,CA-TMP-D
-I will have a party next Friday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,37,CA-TMP-D
-I will have a party next Saturday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,38,CA-TMP-D
-I will have a party next Sunday,have,6,ARGM-TMP,"['I will have a party next April', 2, 6, 'ARGM-TMP', 'have.04']",CA-TMP-D - T1,39,CA-TMP-D
-My brithday is on Monday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,40,CA-TMP-D
-My brithday is on January,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,41,CA-TMP-D
-My brithday is on February,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,42,CA-TMP-D
-My brithday is on March,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,43,CA-TMP-D
-My brithday is on April,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,44,CA-TMP-D
-My brithday is on May,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,45,CA-TMP-D
-My brithday is on June,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,46,CA-TMP-D
-My brithday is on July,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,47,CA-TMP-D
-My brithday is on August,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,48,CA-TMP-D
-My brithday is on September,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,49,CA-TMP-D
-My brithday is on October,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,50,CA-TMP-D
-My brithday is on November,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,51,CA-TMP-D
-My brithday is on December,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,52,CA-TMP-D
-My brithday is on Monday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,53,CA-TMP-D
-My brithday is on Tuesday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,54,CA-TMP-D
-My brithday is on Wednesday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,55,CA-TMP-D
-My brithday is on Thursday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,56,CA-TMP-D
-My brithday is on Friday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,57,CA-TMP-D
-My brithday is on Saturday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,58,CA-TMP-D
-My brithday is on Sunday,is,4,ARGM-TMP,"['My brithday is on April', 2, 4, 'ARGM-TMP', 'be.02']",CA-TMP-D - T1,59,CA-TMP-D
-The cat jumped from the roof to the hospital,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T1,0,CA-DIR-P
-I biked from my house to the aquarium,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,1,CA-DIR-P
-The cat jumped from the roof to the school,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T1,2,CA-DIR-P
-I biked from my house to the school,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,3,CA-DIR-P
-The dog ran from the park to the cinema,ran,5,ARGM-DIR,run.02,CA-DIR-P - T1,4,CA-DIR-P
-I biked from my house to the cinema,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,5,CA-DIR-P
-The cat jumped from the roof to the school,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T1,6,CA-DIR-P
-I biked from my house to the park,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,7,CA-DIR-P
-The dog ran from the park to the park,ran,5,ARGM-DIR,run.02,CA-DIR-P - T1,8,CA-DIR-P
-I biked from my house to the aquarium,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,9,CA-DIR-P
-I biked from my house to the museum,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,10,CA-DIR-P
-The dog ran from the park to the restaurant,ran,5,ARGM-DIR,run.02,CA-DIR-P - T1,11,CA-DIR-P
-I biked from my house to the garbe disposal,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,12,CA-DIR-P
-I biked from my house to the restaurant,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,13,CA-DIR-P
-The cat jumped from the roof to the park,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T1,14,CA-DIR-P
-I biked from my house to the museum,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,15,CA-DIR-P
-The dog ran from the park to the school,ran,5,ARGM-DIR,run.02,CA-DIR-P - T1,16,CA-DIR-P
-The dog ran from the park to the gym,ran,5,ARGM-DIR,run.02,CA-DIR-P - T1,17,CA-DIR-P
-I biked from my house to the museum,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,18,CA-DIR-P
-I biked from my house to the building,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,19,CA-DIR-P
-I biked from my house to the school,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,20,CA-DIR-P
-The cat jumped from the roof to the restaurant,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T1,21,CA-DIR-P
-I biked from my house to the museum,biked,4,ARGM-DIR,bike.01,CA-DIR-P - T1,22,CA-DIR-P
-The dog ran from the park to the restaurant,ran,5,ARGM-DIR,run.02,CA-DIR-P - T1,23,CA-DIR-P
-The cat jumped from the roof to the park,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T1,24,CA-DIR-P
-Workers dumped the waste into a huge bin from my neighbourhood,dumped,6,ARGM-DIR,dump.01,CA-DIR-P - T2,0,CA-DIR-P
-The dog ran into the park from the store,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,1,CA-DIR-P
-The cat jumped into the box from my window,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T2,2,CA-DIR-P
-No one wants to go home from my window,go,5,ARGM-DIR,go.01,CA-DIR-P - T2,3,CA-DIR-P
-The cat jumped into the box from my neighbourhood,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T2,4,CA-DIR-P
-The dog ran into the park from my window,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,5,CA-DIR-P
-The cat jumped into the box from my window,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T2,6,CA-DIR-P
-No one wants to go home from jail,go,5,ARGM-DIR,go.01,CA-DIR-P - T2,7,CA-DIR-P
-The dog ran into the park from my neighbourhood,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,8,CA-DIR-P
-No one wants to go home from the store,go,5,ARGM-DIR,go.01,CA-DIR-P - T2,9,CA-DIR-P
-The dog ran into the park from jail,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,10,CA-DIR-P
-The dog ran into the park from my window,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,11,CA-DIR-P
-The dog ran into the park from my window,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,12,CA-DIR-P
-No one wants to go home from the store,go,5,ARGM-DIR,go.01,CA-DIR-P - T2,13,CA-DIR-P
-No one wants to go home from jail,go,5,ARGM-DIR,go.01,CA-DIR-P - T2,14,CA-DIR-P
-No one wants to go home from jail,go,5,ARGM-DIR,go.01,CA-DIR-P - T2,15,CA-DIR-P
-The cat jumped into the box from jail,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T2,16,CA-DIR-P
-The dog ran into the park from my window,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,17,CA-DIR-P
-The dog ran into the park from jail,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,18,CA-DIR-P
-No one wants to go home from the store,go,5,ARGM-DIR,go.01,CA-DIR-P - T2,19,CA-DIR-P
-The dog ran into the park from jail,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,20,CA-DIR-P
-The dog ran into the park from jail,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,21,CA-DIR-P
-The cat jumped into the box from the store,jumped,5,ARGM-DIR,jump.01,CA-DIR-P - T2,22,CA-DIR-P
-The dog ran into the park from my window,ran,5,ARGM-DIR,run.02,CA-DIR-P - T2,23,CA-DIR-P
-Workers dumped the waste into a huge bin from jail,dumped,6,ARGM-DIR,dump.01,CA-DIR-P - T2,24,CA-DIR-P
+sent,pred,pred_pos,arg_pos,label,pred_frame,test_name,test_case,capability
+There was a book,was,1,3,ARG1,be.02,PatientRight,0,PatientRight
+There lived a person,lived,1,3,ARG0,live.01,PatientRight,1,PatientRight
+There lied a book,lied,1,3,ARG1,lie.07,PatientRight,2,PatientRight
+There existed a chair,existed,1,3,ARG1,exist.01,PatientRight,3,PatientRight
+There lied a phone,lied,1,3,ARG1,lie.07,PatientRight,4,PatientRight
+There died a person,died,1,3,ARG1,die.01,PatientRight,5,PatientRight
+There exists a building,exists,1,3,ARG1,exist.01,PatientRight,6,PatientRight
+There was a phone,was,1,3,ARG1,be.02,PatientRight,7,PatientRight
+There lays a screen,lays,1,3,ARG1,lie.07,PatientRight,8,PatientRight
+There remains a person,remains,1,3,ARG1,remain.01,PatientRight,9,PatientRight
+There lays a book,lays,1,3,ARG1,lie.07,PatientRight,10,PatientRight
+There hangs a TV,hangs,1,3,ARG1,hang.01,PatientRight,11,PatientRight
+Here exists a book,exists,1,3,ARG1,exist.01,PatientRight,12,PatientRight
+Here runs a computer,runs,1,3,ARG1,run.01,PatientRight,13,PatientRight
+Here exists a phone,exists,1,3,ARG1,exist.01,PatientRight,14,PatientRight
+Here swings a chair,swings,1,3,ARG1,swing.02,PatientRight,15,PatientRight
+Here spawns a car,spawns,1,3,ARG1,spawn.01,PatientRight,16,PatientRight
+Here exists a building,exists,1,3,ARG1,exist.01,PatientRight,17,PatientRight
+Here comes the sun,comes,1,3,ARG1,come.01,PatientRight,18,PatientRight
+Here projects a shadow,projects,1,3,ARG1,project.01,PatientRight,19,PatientRight
+Here was a building,was,1,3,ARG1,be.02,PatientRight,20,PatientRight
+Here is a phone,is,1,3,ARG1,be.02,PatientRight,21,PatientRight
+Here lays a car,lays,1,3,ARG1,lie.07,PatientRight,22,PatientRight
+Here grows a tree,grows,1,3,ARG1,grow.03,PatientRight,23,PatientRight
+Here floats a computer,floats,1,3,ARG1,float.01,PatientRight,24,PatientRight
+Anybody that accidentally yet happily eats in private is unreliable,eats,5,0,ARG0,eat.01,AgentRole3D,0,AgentRole3D
+Nobody that accidentally and sadly eats in private is smart,eats,5,0,ARG0,eat.01,AgentRole3D,1,AgentRole3D
+Anybody that unintentionally and angrily drinks in private is unreliable,drinks,5,0,ARG0,drink.01,AgentRole3D,2,AgentRole3D
+Anybody that intentionally and calmly cries in the bus is smart,cries,5,0,ARG0,watch.01,AgentRole3D,3,AgentRole3D
+Nobody that unintentionally yet sadly cries in public is trustworthy,cries,5,0,ARG0,watch.01,AgentRole3D,4,AgentRole3D
+Anybody that intentionally and happily cries in private is unreliable,cries,5,0,ARG0,watch.01,AgentRole3D,5,AgentRole3D
+Nobody that intentionally and angrily drinks in public is trustworthy,drinks,5,0,ARG0,drink.01,AgentRole3D,6,AgentRole3D
+Nobody that accidentally and calmly drinks in public is smart,drinks,5,0,ARG0,drink.01,AgentRole3D,7,AgentRole3D
+Nobody that unintentionally and sadly laughs in public is unreliable,laughs,5,0,ARG0,cry.01,AgentRole3D,8,AgentRole3D
+Anybody that accidentally yet angrily laughs in public is trustworthy,laughs,5,0,ARG0,cry.01,AgentRole3D,9,AgentRole3D
+Nobody that accidentally and sadly cries in public is smart,cries,5,0,ARG0,watch.01,AgentRole3D,10,AgentRole3D
+Nobody that intentionally and calmly eats in public is unreliable,eats,5,0,ARG0,eat.01,AgentRole3D,11,AgentRole3D
+Anybody that intentionally and calmly eats in the bus is smart,eats,5,0,ARG0,eat.01,AgentRole3D,12,AgentRole3D
+Anybody that unintentionally and happily eats in public is unreliable,eats,5,0,ARG0,eat.01,AgentRole3D,13,AgentRole3D
+Nobody that unintentionally and sadly eats in public is trustworthy,eats,5,0,ARG0,eat.01,AgentRole3D,14,AgentRole3D
+Nobody that accidentally and angrily eats in the bus is smart,eats,5,0,ARG0,eat.01,AgentRole3D,15,AgentRole3D
+Nobody that accidentally yet happily eats in public is unreliable,eats,5,0,ARG0,eat.01,AgentRole3D,16,AgentRole3D
+Nobody that accidentally and sadly cries in the bus is trustworthy,cries,5,0,ARG0,watch.01,AgentRole3D,17,AgentRole3D
+Anybody that intentionally yet sadly eats in the bus is smart,eats,5,0,ARG0,eat.01,AgentRole3D,18,AgentRole3D
+Anybody that intentionally and happily drinks in private is smart,drinks,5,0,ARG0,drink.01,AgentRole3D,19,AgentRole3D
+Nobody that unintentionally and happily laughs in private is unreliable,laughs,5,0,ARG0,cry.01,AgentRole3D,20,AgentRole3D
+Anybody that unintentionally and sadly cries in private is unreliable,cries,5,0,ARG0,watch.01,AgentRole3D,21,AgentRole3D
+Nobody that intentionally and angrily eats in public is trustworthy,eats,5,0,ARG0,eat.01,AgentRole3D,22,AgentRole3D
+Nobody that accidentally and angrily cries in private is trustworthy,cries,5,0,ARG0,watch.01,AgentRole3D,23,AgentRole3D
+Nobody that intentionally and angrily drinks in the bus is smart,drinks,5,0,ARG0,drink.01,AgentRole3D,24,AgentRole3D
+The animal beside that car is blurry,is,5,1,ARG1,be.02,PatientRole3D,0,PatientRole3D
+The child beside that road is green,is,5,1,ARG1,be.02,PatientRole3D,1,PatientRole3D
+The mailman near this road is sad,is,5,1,ARG1,be.02,PatientRole3D,2,PatientRole3D
+The person aside this house is blurry,is,5,1,ARG1,be.02,PatientRole3D,3,PatientRole3D
+The person aside that road is sad,is,5,1,ARG1,be.02,PatientRole3D,4,PatientRole3D
+The person beside that car is angry,is,5,1,ARG1,be.02,PatientRole3D,5,PatientRole3D
+The mailman by that road is sad,is,5,1,ARG1,be.02,PatientRole3D,6,PatientRole3D
+The child by this road is blurry,is,5,1,ARG1,be.02,PatientRole3D,7,PatientRole3D
+The animal by that car is sad,is,5,1,ARG1,be.02,PatientRole3D,8,PatientRole3D
+The person near that house is sad,is,5,1,ARG1,be.02,PatientRole3D,9,PatientRole3D
+The mailman aside that car is happy,is,5,1,ARG1,be.02,PatientRole3D,10,PatientRole3D
+The mailman near that road is sad,is,5,1,ARG1,be.02,PatientRole3D,11,PatientRole3D
+The animal aside that road is happy,is,5,1,ARG1,be.02,PatientRole3D,12,PatientRole3D
+The mailman aside this car is sad,is,5,1,ARG1,be.02,PatientRole3D,13,PatientRole3D
+The animal by that road is happy,is,5,1,ARG1,be.02,PatientRole3D,14,PatientRole3D
+The child near this car is green,is,5,1,ARG1,be.02,PatientRole3D,15,PatientRole3D
+The animal beside this road is angry,is,5,1,ARG1,be.02,PatientRole3D,16,PatientRole3D
+The child by that house is angry,is,5,1,ARG1,be.02,PatientRole3D,17,PatientRole3D
+The person near that car is blurry,is,5,1,ARG1,be.02,PatientRole3D,18,PatientRole3D
+The person near that car is angry,is,5,1,ARG1,be.02,PatientRole3D,19,PatientRole3D
+The person aside this car is blurry,is,5,1,ARG1,be.02,PatientRole3D,20,PatientRole3D
+The animal aside this house is happy,is,5,1,ARG1,be.02,PatientRole3D,21,PatientRole3D
+The mailman beside this road is sad,is,5,1,ARG1,be.02,PatientRole3D,22,PatientRole3D
+The person by that house is sad,is,5,1,ARG1,be.02,PatientRole3D,23,PatientRole3D
+The animal aside this car is happy,is,5,1,ARG1,be.02,PatientRole3D,24,PatientRole3D
+I visited my grandmother last May,visited,1,5,ARGM-TMP,visit.01,TempAdv,0,TempAdv
+I visited my grandmother last January,visited,1,5,ARGM-TMP,visit.01,TempAdv,1,TempAdv
+I visited my grandmother last February,visited,1,5,ARGM-TMP,visit.01,TempAdv,2,TempAdv
+I visited my grandmother last March,visited,1,5,ARGM-TMP,visit.01,TempAdv,3,TempAdv
+I visited my grandmother last April,visited,1,5,ARGM-TMP,visit.01,TempAdv,4,TempAdv
+I visited my grandmother last May,visited,1,5,ARGM-TMP,visit.01,TempAdv,5,TempAdv
+I visited my grandmother last June,visited,1,5,ARGM-TMP,visit.01,TempAdv,6,TempAdv
+I visited my grandmother last July,visited,1,5,ARGM-TMP,visit.01,TempAdv,7,TempAdv
+I visited my grandmother last August,visited,1,5,ARGM-TMP,visit.01,TempAdv,8,TempAdv
+I visited my grandmother last September,visited,1,5,ARGM-TMP,visit.01,TempAdv,9,TempAdv
+I visited my grandmother last October,visited,1,5,ARGM-TMP,visit.01,TempAdv,10,TempAdv
+I visited my grandmother last November,visited,1,5,ARGM-TMP,visit.01,TempAdv,11,TempAdv
+I visited my grandmother last December,visited,1,5,ARGM-TMP,visit.01,TempAdv,12,TempAdv
+I visited my grandmother last Monday,visited,1,5,ARGM-TMP,visit.01,TempAdv,13,TempAdv
+I visited my grandmother last Tuesday,visited,1,5,ARGM-TMP,visit.01,TempAdv,14,TempAdv
+I visited my grandmother last Wednesday,visited,1,5,ARGM-TMP,visit.01,TempAdv,15,TempAdv
+I visited my grandmother last Thursday,visited,1,5,ARGM-TMP,visit.01,TempAdv,16,TempAdv
+I visited my grandmother last Friday,visited,1,5,ARGM-TMP,visit.01,TempAdv,17,TempAdv
+I visited my grandmother last Saturday,visited,1,5,ARGM-TMP,visit.01,TempAdv,18,TempAdv
+I visited my grandmother last Sunday,visited,1,5,ARGM-TMP,visit.01,TempAdv,19,TempAdv
+My brithday will take place on Monday,take,3,6,ARGM-TMP,take.01,TempAdv,20,TempAdv
+My brithday will take place on January,take,3,6,ARGM-TMP,take.01,TempAdv,21,TempAdv
+My brithday will take place on February,take,3,6,ARGM-TMP,take.01,TempAdv,22,TempAdv
+My brithday will take place on March,take,3,6,ARGM-TMP,take.01,TempAdv,23,TempAdv
+My brithday will take place on April,take,3,6,ARGM-TMP,take.01,TempAdv,24,TempAdv
+My brithday will take place on May,take,3,6,ARGM-TMP,take.01,TempAdv,25,TempAdv
+My brithday will take place on June,take,3,6,ARGM-TMP,take.01,TempAdv,26,TempAdv
+My brithday will take place on July,take,3,6,ARGM-TMP,take.01,TempAdv,27,TempAdv
+My brithday will take place on August,take,3,6,ARGM-TMP,take.01,TempAdv,28,TempAdv
+My brithday will take place on September,take,3,6,ARGM-TMP,take.01,TempAdv,29,TempAdv
+My brithday will take place on October,take,3,6,ARGM-TMP,take.01,TempAdv,30,TempAdv
+My brithday will take place on November,take,3,6,ARGM-TMP,take.01,TempAdv,31,TempAdv
+My brithday will take place on December,take,3,6,ARGM-TMP,take.01,TempAdv,32,TempAdv
+My brithday will take place on Monday,take,3,6,ARGM-TMP,take.01,TempAdv,33,TempAdv
+My brithday will take place on Tuesday,take,3,6,ARGM-TMP,take.01,TempAdv,34,TempAdv
+My brithday will take place on Wednesday,take,3,6,ARGM-TMP,take.01,TempAdv,35,TempAdv
+My brithday will take place on Thursday,take,3,6,ARGM-TMP,take.01,TempAdv,36,TempAdv
+My brithday will take place on Friday,take,3,6,ARGM-TMP,take.01,TempAdv,37,TempAdv
+My brithday will take place on Saturday,take,3,6,ARGM-TMP,take.01,TempAdv,38,TempAdv
+My brithday will take place on Sunday,take,3,6,ARGM-TMP,take.01,TempAdv,39,TempAdv
+I will have a party next Saturday,have,2,6,ARGM-TMP,have.04,TempAdv,40,TempAdv
+I will have a party next January,have,2,6,ARGM-TMP,have.04,TempAdv,41,TempAdv
+I will have a party next February,have,2,6,ARGM-TMP,have.04,TempAdv,42,TempAdv
+I will have a party next March,have,2,6,ARGM-TMP,have.04,TempAdv,43,TempAdv
+I will have a party next April,have,2,6,ARGM-TMP,have.04,TempAdv,44,TempAdv
+I will have a party next May,have,2,6,ARGM-TMP,have.04,TempAdv,45,TempAdv
+I will have a party next June,have,2,6,ARGM-TMP,have.04,TempAdv,46,TempAdv
+I will have a party next July,have,2,6,ARGM-TMP,have.04,TempAdv,47,TempAdv
+I will have a party next August,have,2,6,ARGM-TMP,have.04,TempAdv,48,TempAdv
+I will have a party next September,have,2,6,ARGM-TMP,have.04,TempAdv,49,TempAdv
+I will have a party next October,have,2,6,ARGM-TMP,have.04,TempAdv,50,TempAdv
+I will have a party next November,have,2,6,ARGM-TMP,have.04,TempAdv,51,TempAdv
+I will have a party next December,have,2,6,ARGM-TMP,have.04,TempAdv,52,TempAdv
+I will have a party next Monday,have,2,6,ARGM-TMP,have.04,TempAdv,53,TempAdv
+I will have a party next Tuesday,have,2,6,ARGM-TMP,have.04,TempAdv,54,TempAdv
+I will have a party next Wednesday,have,2,6,ARGM-TMP,have.04,TempAdv,55,TempAdv
+I will have a party next Thursday,have,2,6,ARGM-TMP,have.04,TempAdv,56,TempAdv
+I will have a party next Friday,have,2,6,ARGM-TMP,have.04,TempAdv,57,TempAdv
+I will have a party next Saturday,have,2,6,ARGM-TMP,have.04,TempAdv,58,TempAdv
+I will have a party next Sunday,have,2,6,ARGM-TMP,have.04,TempAdv,59,TempAdv
+I never go to the gym,go,2,1,ARGM-NEG,go.01,NegAdv,0,NegAdv
+I never eat meat,eat,2,1,ARGM-NEG,eat.01,NegAdv,1,NegAdv
+I never drink alcohol,drink,2,1,ARGM-NEG,drink.01,NegAdv,2,NegAdv
+I never watch TV,watch,2,1,ARGM-NEG,watch.01,NegAdv,3,NegAdv
+I never play video games,play,2,1,ARGM-NEG,play.01,NegAdv,4,NegAdv
+I never read books,read,2,1,ARGM-NEG,read.01,NegAdv,5,NegAdv
+He never goes to the gym,goes,2,1,ARGM-NEG,go.01,NegAdv,6,NegAdv
+He never eats meat,eats,2,1,ARGM-NEG,eat.01,NegAdv,7,NegAdv
+He never drinks alcohol,drinks,2,1,ARGM-NEG,drink.01,NegAdv,8,NegAdv
+He never watches TV,watches,2,1,ARGM-NEG,watch.01,NegAdv,9,NegAdv
+My mother used to live in Mozambique,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in Nepal,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in China,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in Indonesia,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in Indonesia,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in Uzbekistan,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in Japan,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in France,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in Italy,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+My mother used to live in Canada,live,4,6,ARGM-LOC,live.01,LocationVar,0,LocationVar
+There is a fantastic flower shop in Mozambique,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in Nepal,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in China,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in Indonesia,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in Indonesia,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in Uzbekistan,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in Japan,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in France,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in Italy,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+There is a fantastic flower shop in Canada,is,1,7,ARGM-LOC,be.02,LocationVar,1,LocationVar
+I bought flowers in Oakland,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Cleveland,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Cincinnati,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Greensboro,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Greensboro,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in San Jose,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Lubbock,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Denver,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Kansas,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I bought flowers in Garland,bought,1,4,ARGM-LOC,buy.01,LocationVar,2,LocationVar
+I ate a cake yesterday,ate,1,4,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I ate a cake last week,ate,1,5,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I ate a cake last month,ate,1,5,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I ate a cake yesterday,ate,1,4,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I ate a cake this morning,ate,1,5,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I ate a cake last night,ate,1,5,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I ate a cake last year,ate,1,5,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I ate a cake recently,ate,1,4,ARGM-TMP,eat.01,FreqAdvPast,0,FreqAdvPast
+I visited my grandmother recently,visited,1,4,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I visited my grandmother last week,visited,1,5,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I visited my grandmother last month,visited,1,5,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I visited my grandmother yesterday,visited,1,4,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I visited my grandmother this morning,visited,1,5,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I visited my grandmother last night,visited,1,5,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I visited my grandmother last year,visited,1,5,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I visited my grandmother recently,visited,1,4,ARGM-TMP,visit.01,FreqAdvPast,1,FreqAdvPast
+I will be having my birthday tomorrow,having,3,6,ARGM-TMP,have.02,FreqAdvPresent,0,FreqAdvPresent
+I will be having my birthday tomorrow,having,3,6,ARGM-TMP,have.02,FreqAdvPresent,0,FreqAdvPresent
+I will be having my birthday today,having,3,6,ARGM-TMP,have.02,FreqAdvPresent,0,FreqAdvPresent
+I will be having my birthday this afternoon,having,3,7,ARGM-TMP,have.02,FreqAdvPresent,0,FreqAdvPresent
+I will be having my birthday tonight,having,3,6,ARGM-TMP,have.02,FreqAdvPresent,0,FreqAdvPresent
+The concert begins tonight,begins,2,3,ARGM-TMP,begin.01,FreqAdvPresent,1,FreqAdvPresent
+The concert begins tomorrow,begins,2,3,ARGM-TMP,begin.01,FreqAdvPresent,1,FreqAdvPresent
+The concert begins today,begins,2,3,ARGM-TMP,begin.01,FreqAdvPresent,1,FreqAdvPresent
+The concert begins this afternoon,begins,2,4,ARGM-TMP,begin.01,FreqAdvPresent,1,FreqAdvPresent
+The concert begins tonight,begins,2,3,ARGM-TMP,begin.01,FreqAdvPresent,1,FreqAdvPresent
+Her car is arriving today,arriving,3,4,ARGM-TMP,arrive.01,FreqAdvPresent,2,FreqAdvPresent
+Her car is arriving tomorrow,arriving,3,4,ARGM-TMP,arrive.01,FreqAdvPresent,2,FreqAdvPresent
+Her car is arriving today,arriving,3,4,ARGM-TMP,arrive.01,FreqAdvPresent,2,FreqAdvPresent
+Her car is arriving this afternoon,arriving,3,5,ARGM-TMP,arrive.01,FreqAdvPresent,2,FreqAdvPresent
+Her car is arriving tonight,arriving,3,4,ARGM-TMP,arrive.01,FreqAdvPresent,2,FreqAdvPresent
+I will have a party tonight,have,2,5,ARGM-TMP,have.04,FreqAdvFuture,0,FreqAdvFuture
+I will have a party next week,have,2,6,ARGM-TMP,have.04,FreqAdvFuture,0,FreqAdvFuture
+I will have a party next month,have,2,6,ARGM-TMP,have.04,FreqAdvFuture,0,FreqAdvFuture
+I will have a party next year,have,2,6,ARGM-TMP,have.04,FreqAdvFuture,0,FreqAdvFuture
+I will have a party tomorrow,have,2,5,ARGM-TMP,have.04,FreqAdvFuture,0,FreqAdvFuture
+I will have a party tonight,have,2,5,ARGM-TMP,have.04,FreqAdvFuture,0,FreqAdvFuture
+He will go to the park tomorrow,go,2,6,ARGM-TMP,go.01,FreqAdvFuture,1,FreqAdvFuture
+He will go to the park next week,go,2,7,ARGM-TMP,go.01,FreqAdvFuture,1,FreqAdvFuture
+He will go to the park next month,go,2,7,ARGM-TMP,go.01,FreqAdvFuture,1,FreqAdvFuture
+He will go to the park next year,go,2,7,ARGM-TMP,go.01,FreqAdvFuture,1,FreqAdvFuture
+He will go to the park tomorrow,go,2,6,ARGM-TMP,go.01,FreqAdvFuture,1,FreqAdvFuture
+He will go to the park tonight,go,2,6,ARGM-TMP,go.01,FreqAdvFuture,1,FreqAdvFuture
+The cat jumped forward from the roof to the building,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,0,VarDirTarget
+The dog ran along the road to the store,ran,2,5,ARGM-DIR,run.02,VarDirTarget,1,VarDirTarget
+I biked from my house to the school,biked,1,4,ARGM-DIR,bike.01,VarDirTarget,2,VarDirTarget
+I biked from my house to the garbe disposal,biked,1,4,ARGM-DIR,bike.01,VarDirTarget,3,VarDirTarget
+I biked from my house to the gym,biked,1,4,ARGM-DIR,bike.01,VarDirTarget,4,VarDirTarget
+The cat jumped forward from the roof to the school,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,5,VarDirTarget
+The dog ran along the road to the store,ran,2,5,ARGM-DIR,run.02,VarDirTarget,6,VarDirTarget
+The dog ran along the road to the school,ran,2,5,ARGM-DIR,run.02,VarDirTarget,7,VarDirTarget
+The cat jumped forward from the roof to the park,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,8,VarDirTarget
+The cat jumped forward from the roof to the restaurant,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,9,VarDirTarget
+I biked from my house to the school,biked,1,4,ARGM-DIR,bike.01,VarDirTarget,10,VarDirTarget
+The cat jumped forward from the roof to the school,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,11,VarDirTarget
+The cat jumped forward from the roof to the gym,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,12,VarDirTarget
+I biked from my house to the cinema,biked,1,4,ARGM-DIR,bike.01,VarDirTarget,13,VarDirTarget
+I biked from my house to the zoo,biked,1,4,ARGM-DIR,bike.01,VarDirTarget,14,VarDirTarget
+The cat jumped forward from the roof to the restaurant,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,15,VarDirTarget
+The cat jumped forward from the roof to the park,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,16,VarDirTarget
+I biked from my house to the school,biked,1,4,ARGM-DIR,bike.01,VarDirTarget,17,VarDirTarget
+The cat jumped forward from the roof to the restaurant,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,18,VarDirTarget
+The dog ran along the road to the cinema,ran,2,5,ARGM-DIR,run.02,VarDirTarget,19,VarDirTarget
+The cat jumped forward from the roof to the school,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,20,VarDirTarget
+The dog ran along the road to the gym,ran,2,5,ARGM-DIR,run.02,VarDirTarget,21,VarDirTarget
+The cat jumped forward from the roof to the restaurant,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,22,VarDirTarget
+The dog ran along the road to the university,ran,2,5,ARGM-DIR,run.02,VarDirTarget,23,VarDirTarget
+The cat jumped forward from the roof to the garbe disposal,jumped,2,3,ARGM-DIR,jump.01,VarDirTarget,24,VarDirTarget
+The laundry should be put onto the floor,put,4,7,ARGM-GOL,put.01,VarGoalSource,0,VarGoalSource
+Workers dumped the waste from my house into the red basket,dumped,1,10,ARGM-GOL,dump.01,VarGoalSource,1,VarGoalSource
+Workers dumped the waste from my house onto the floor,dumped,1,9,ARGM-GOL,dump.01,VarGoalSource,2,VarGoalSource
+Workers dumped the waste from my house onto the floor,dumped,1,9,ARGM-GOL,dump.01,VarGoalSource,3,VarGoalSource
+The laundry should be put into the garbage disposal,put,4,8,ARGM-GOL,put.01,VarGoalSource,4,VarGoalSource
+The laundry should be put into the red basket,put,4,8,ARGM-GOL,put.01,VarGoalSource,5,VarGoalSource
+My brother threw a paper into the red basket,threw,2,8,ARGM-GOL,throw.01,VarGoalSource,6,VarGoalSource
+My brother threw a paper into a huge bin,threw,2,8,ARGM-GOL,throw.01,VarGoalSource,7,VarGoalSource
+My brother threw a paper into the garbage disposal,threw,2,8,ARGM-GOL,throw.01,VarGoalSource,8,VarGoalSource
+My brother threw a paper onto the floor,threw,2,7,ARGM-GOL,throw.01,VarGoalSource,9,VarGoalSource
+My brother threw a paper into the red basket,threw,2,8,ARGM-GOL,throw.01,VarGoalSource,10,VarGoalSource
+The laundry should be put onto the floor,put,4,7,ARGM-GOL,put.01,VarGoalSource,11,VarGoalSource
+Workers dumped the waste from my house into the garbage disposal,dumped,1,10,ARGM-GOL,dump.01,VarGoalSource,12,VarGoalSource
+The laundry should be put into the red basket,put,4,8,ARGM-GOL,put.01,VarGoalSource,13,VarGoalSource
+Workers dumped the waste from my house onto the floor,dumped,1,9,ARGM-GOL,dump.01,VarGoalSource,14,VarGoalSource
+Workers dumped the waste from my house into a huge bin,dumped,1,10,ARGM-GOL,dump.01,VarGoalSource,15,VarGoalSource
+The laundry should be put into the red basket,put,4,8,ARGM-GOL,put.01,VarGoalSource,16,VarGoalSource
+The laundry should be put into a huge bin,put,4,8,ARGM-GOL,put.01,VarGoalSource,17,VarGoalSource
+Workers dumped the waste from my house into a huge bin,dumped,1,10,ARGM-GOL,dump.01,VarGoalSource,18,VarGoalSource
+The laundry should be put into the red basket,put,4,8,ARGM-GOL,put.01,VarGoalSource,19,VarGoalSource
+Workers dumped the waste from my house into the garbage disposal,dumped,1,10,ARGM-GOL,dump.01,VarGoalSource,20,VarGoalSource
+My brother threw a paper into the garbage disposal,threw,2,8,ARGM-GOL,throw.01,VarGoalSource,21,VarGoalSource
+Workers dumped the waste from my house onto the floor,dumped,1,9,ARGM-GOL,dump.01,VarGoalSource,22,VarGoalSource
+The laundry should be put into the red basket,put,4,8,ARGM-GOL,put.01,VarGoalSource,23,VarGoalSource
+The laundry should be put onto the floor,put,4,7,ARGM-GOL,put.01,VarGoalSource,24,VarGoalSource

@@ -1,0 +1,537 @@
+,model_name,capability,test_name,test_n,pred,true,sent,predicate,arg_pos,pred_pos
+0,bert_a3_10ep,PatientRight,PatientRight,0,B-ARG1,B-ARG1,There was a book,was,3,1
+1,bert_a3_10ep,PatientRight,PatientRight,1,B-ARG1,B-ARG0,There lived a person,lived,3,1
+2,bert_a3_10ep,PatientRight,PatientRight,2,B-ARG1,B-ARG1,There lied a book,lied,3,1
+3,bert_a3_10ep,PatientRight,PatientRight,3,B-ARG1,B-ARG1,There existed a chair,existed,3,1
+4,bert_a3_10ep,PatientRight,PatientRight,4,B-ARG1,B-ARG1,There lied a phone,lied,3,1
+5,bert_a3_10ep,PatientRight,PatientRight,5,B-ARG1,B-ARG1,There died a person,died,3,1
+6,bert_a3_10ep,PatientRight,PatientRight,6,B-ARG1,B-ARG1,There exists a building,exists,3,1
+7,bert_a3_10ep,PatientRight,PatientRight,7,B-ARG1,B-ARG1,There was a phone,was,3,1
+8,bert_a3_10ep,PatientRight,PatientRight,8,B-ARG1,B-ARG1,There lays a screen,lays,3,1
+9,bert_a3_10ep,PatientRight,PatientRight,9,B-ARG1,B-ARG1,There remains a person,remains,3,1
+10,bert_a3_10ep,PatientRight,PatientRight,10,B-ARG1,B-ARG1,There lays a book,lays,3,1
+11,bert_a3_10ep,PatientRight,PatientRight,11,B-ARG1,B-ARG1,There hangs a TV,hangs,3,1
+12,bert_a3_10ep,PatientRight,PatientRight,12,B-ARG1,B-ARG1,Here exists a book,exists,3,1
+13,bert_a3_10ep,PatientRight,PatientRight,13,B-ARG1,B-ARG1,Here runs a computer,runs,3,1
+14,bert_a3_10ep,PatientRight,PatientRight,14,B-ARG1,B-ARG1,Here exists a phone,exists,3,1
+15,bert_a3_10ep,PatientRight,PatientRight,15,B-ARG1,B-ARG1,Here swings a chair,swings,3,1
+16,bert_a3_10ep,PatientRight,PatientRight,16,B-ARG1,B-ARG1,Here spawns a car,spawns,3,1
+17,bert_a3_10ep,PatientRight,PatientRight,17,B-ARG1,B-ARG1,Here exists a building,exists,3,1
+18,bert_a3_10ep,PatientRight,PatientRight,18,B-ARG1,B-ARG1,Here comes the sun,comes,3,1
+19,bert_a3_10ep,PatientRight,PatientRight,19,B-ARG1,B-ARG1,Here projects a shadow,projects,3,1
+20,bert_a3_10ep,PatientRight,PatientRight,20,B-ARG1,B-ARG1,Here was a building,was,3,1
+21,bert_a3_10ep,PatientRight,PatientRight,21,B-ARG1,B-ARG1,Here is a phone,is,3,1
+22,bert_a3_10ep,PatientRight,PatientRight,22,B-ARG1,B-ARG1,Here lays a car,lays,3,1
+23,bert_a3_10ep,PatientRight,PatientRight,23,B-ARG1,B-ARG1,Here grows a tree,grows,3,1
+24,bert_a3_10ep,PatientRight,PatientRight,24,B-ARG1,B-ARG1,Here floats a computer,floats,3,1
+25,bert_a3_10ep,AgentRole3D,AgentRole3D,0,B-ARG0,B-ARG0,Anybody that accidentally yet happily eats in private is unreliable,eats,0,5
+26,bert_a3_10ep,AgentRole3D,AgentRole3D,1,B-ARG0,B-ARG0,Nobody that accidentally and sadly eats in private is smart,eats,0,5
+27,bert_a3_10ep,AgentRole3D,AgentRole3D,2,B-ARG0,B-ARG0,Anybody that unintentionally and angrily drinks in private is unreliable,drinks,0,5
+28,bert_a3_10ep,AgentRole3D,AgentRole3D,3,B-ARG0,B-ARG0,Anybody that intentionally and calmly cries in the bus is smart,cries,0,5
+29,bert_a3_10ep,AgentRole3D,AgentRole3D,4,B-ARG0,B-ARG0,Nobody that unintentionally yet sadly cries in public is trustworthy,cries,0,5
+30,bert_a3_10ep,AgentRole3D,AgentRole3D,5,B-ARG0,B-ARG0,Anybody that intentionally and happily cries in private is unreliable,cries,0,5
+31,bert_a3_10ep,AgentRole3D,AgentRole3D,6,B-ARG0,B-ARG0,Nobody that intentionally and angrily drinks in public is trustworthy,drinks,0,5
+32,bert_a3_10ep,AgentRole3D,AgentRole3D,7,B-ARG0,B-ARG0,Nobody that accidentally and calmly drinks in public is smart,drinks,0,5
+33,bert_a3_10ep,AgentRole3D,AgentRole3D,8,B-ARG0,B-ARG0,Nobody that unintentionally and sadly laughs in public is unreliable,laughs,0,5
+34,bert_a3_10ep,AgentRole3D,AgentRole3D,9,B-ARG0,B-ARG0,Anybody that accidentally yet angrily laughs in public is trustworthy,laughs,0,5
+35,bert_a3_10ep,AgentRole3D,AgentRole3D,10,B-ARG0,B-ARG0,Nobody that accidentally and sadly cries in public is smart,cries,0,5
+36,bert_a3_10ep,AgentRole3D,AgentRole3D,11,B-ARG0,B-ARG0,Nobody that intentionally and calmly eats in public is unreliable,eats,0,5
+37,bert_a3_10ep,AgentRole3D,AgentRole3D,12,B-ARG0,B-ARG0,Anybody that intentionally and calmly eats in the bus is smart,eats,0,5
+38,bert_a3_10ep,AgentRole3D,AgentRole3D,13,B-ARG0,B-ARG0,Anybody that unintentionally and happily eats in public is unreliable,eats,0,5
+39,bert_a3_10ep,AgentRole3D,AgentRole3D,14,B-ARG0,B-ARG0,Nobody that unintentionally and sadly eats in public is trustworthy,eats,0,5
+40,bert_a3_10ep,AgentRole3D,AgentRole3D,15,B-ARG0,B-ARG0,Nobody that accidentally and angrily eats in the bus is smart,eats,0,5
+41,bert_a3_10ep,AgentRole3D,AgentRole3D,16,B-ARG0,B-ARG0,Nobody that accidentally yet happily eats in public is unreliable,eats,0,5
+42,bert_a3_10ep,AgentRole3D,AgentRole3D,17,B-ARG0,B-ARG0,Nobody that accidentally and sadly cries in the bus is trustworthy,cries,0,5
+43,bert_a3_10ep,AgentRole3D,AgentRole3D,18,B-ARG0,B-ARG0,Anybody that intentionally yet sadly eats in the bus is smart,eats,0,5
+44,bert_a3_10ep,AgentRole3D,AgentRole3D,19,B-ARG0,B-ARG0,Anybody that intentionally and happily drinks in private is smart,drinks,0,5
+45,bert_a3_10ep,AgentRole3D,AgentRole3D,20,B-ARG0,B-ARG0,Nobody that unintentionally and happily laughs in private is unreliable,laughs,0,5
+46,bert_a3_10ep,AgentRole3D,AgentRole3D,21,B-ARG0,B-ARG0,Anybody that unintentionally and sadly cries in private is unreliable,cries,0,5
+47,bert_a3_10ep,AgentRole3D,AgentRole3D,22,B-ARG0,B-ARG0,Nobody that intentionally and angrily eats in public is trustworthy,eats,0,5
+48,bert_a3_10ep,AgentRole3D,AgentRole3D,23,B-ARG0,B-ARG0,Nobody that accidentally and angrily cries in private is trustworthy,cries,0,5
+49,bert_a3_10ep,AgentRole3D,AgentRole3D,24,B-ARG0,B-ARG0,Nobody that intentionally and angrily drinks in the bus is smart,drinks,0,5
+50,bert_a3_10ep,PatientRole3D,PatientRole3D,0,B-ARG1,B-ARG1,The animal beside that car is blurry,is,1,5
+51,bert_a3_10ep,PatientRole3D,PatientRole3D,1,B-ARG1,B-ARG1,The child beside that road is green,is,1,5
+52,bert_a3_10ep,PatientRole3D,PatientRole3D,2,B-ARG1,B-ARG1,The mailman near this road is sad,is,1,5
+53,bert_a3_10ep,PatientRole3D,PatientRole3D,3,B-ARG1,B-ARG1,The person aside this house is blurry,is,1,5
+54,bert_a3_10ep,PatientRole3D,PatientRole3D,4,B-ARG1,B-ARG1,The person aside that road is sad,is,1,5
+55,bert_a3_10ep,PatientRole3D,PatientRole3D,5,B-ARG1,B-ARG1,The person beside that car is angry,is,1,5
+56,bert_a3_10ep,PatientRole3D,PatientRole3D,6,B-ARG1,B-ARG1,The mailman by that road is sad,is,1,5
+57,bert_a3_10ep,PatientRole3D,PatientRole3D,7,B-ARG1,B-ARG1,The child by this road is blurry,is,1,5
+58,bert_a3_10ep,PatientRole3D,PatientRole3D,8,B-ARG1,B-ARG1,The animal by that car is sad,is,1,5
+59,bert_a3_10ep,PatientRole3D,PatientRole3D,9,B-ARG1,B-ARG1,The person near that house is sad,is,1,5
+60,bert_a3_10ep,PatientRole3D,PatientRole3D,10,B-ARG1,B-ARG1,The mailman aside that car is happy,is,1,5
+61,bert_a3_10ep,PatientRole3D,PatientRole3D,11,B-ARG1,B-ARG1,The mailman near that road is sad,is,1,5
+62,bert_a3_10ep,PatientRole3D,PatientRole3D,12,B-ARG1,B-ARG1,The animal aside that road is happy,is,1,5
+63,bert_a3_10ep,PatientRole3D,PatientRole3D,13,B-ARG1,B-ARG1,The mailman aside this car is sad,is,1,5
+64,bert_a3_10ep,PatientRole3D,PatientRole3D,14,B-ARG1,B-ARG1,The animal by that road is happy,is,1,5
+65,bert_a3_10ep,PatientRole3D,PatientRole3D,15,B-ARG1,B-ARG1,The child near this car is green,is,1,5
+66,bert_a3_10ep,PatientRole3D,PatientRole3D,16,B-ARG1,B-ARG1,The animal beside this road is angry,is,1,5
+67,bert_a3_10ep,PatientRole3D,PatientRole3D,17,B-ARG1,B-ARG1,The child by that house is angry,is,1,5
+68,bert_a3_10ep,PatientRole3D,PatientRole3D,18,B-ARG1,B-ARG1,The person near that car is blurry,is,1,5
+69,bert_a3_10ep,PatientRole3D,PatientRole3D,19,B-ARG1,B-ARG1,The person near that car is angry,is,1,5
+70,bert_a3_10ep,PatientRole3D,PatientRole3D,20,B-ARG1,B-ARG1,The person aside this car is blurry,is,1,5
+71,bert_a3_10ep,PatientRole3D,PatientRole3D,21,B-ARG1,B-ARG1,The animal aside this house is happy,is,1,5
+72,bert_a3_10ep,PatientRole3D,PatientRole3D,22,B-ARG1,B-ARG1,The mailman beside this road is sad,is,1,5
+73,bert_a3_10ep,PatientRole3D,PatientRole3D,23,B-ARG1,B-ARG1,The person by that house is sad,is,1,5
+74,bert_a3_10ep,PatientRole3D,PatientRole3D,24,B-ARG1,B-ARG1,The animal aside this car is happy,is,1,5
+75,bert_a3_10ep,TempAdv,TempAdv,0,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last May,visited,5,1
+76,bert_a3_10ep,TempAdv,TempAdv,1,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last January,visited,5,1
+77,bert_a3_10ep,TempAdv,TempAdv,2,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last February,visited,5,1
+78,bert_a3_10ep,TempAdv,TempAdv,3,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last March,visited,5,1
+79,bert_a3_10ep,TempAdv,TempAdv,4,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last April,visited,5,1
+80,bert_a3_10ep,TempAdv,TempAdv,5,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last May,visited,5,1
+81,bert_a3_10ep,TempAdv,TempAdv,6,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last June,visited,5,1
+82,bert_a3_10ep,TempAdv,TempAdv,7,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last July,visited,5,1
+83,bert_a3_10ep,TempAdv,TempAdv,8,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last August,visited,5,1
+84,bert_a3_10ep,TempAdv,TempAdv,9,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last September,visited,5,1
+85,bert_a3_10ep,TempAdv,TempAdv,10,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last October,visited,5,1
+86,bert_a3_10ep,TempAdv,TempAdv,11,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last November,visited,5,1
+87,bert_a3_10ep,TempAdv,TempAdv,12,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last December,visited,5,1
+88,bert_a3_10ep,TempAdv,TempAdv,13,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Monday,visited,5,1
+89,bert_a3_10ep,TempAdv,TempAdv,14,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Tuesday,visited,5,1
+90,bert_a3_10ep,TempAdv,TempAdv,15,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Wednesday,visited,5,1
+91,bert_a3_10ep,TempAdv,TempAdv,16,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Thursday,visited,5,1
+92,bert_a3_10ep,TempAdv,TempAdv,17,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Friday,visited,5,1
+93,bert_a3_10ep,TempAdv,TempAdv,18,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Saturday,visited,5,1
+94,bert_a3_10ep,TempAdv,TempAdv,19,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Sunday,visited,5,1
+95,bert_a3_10ep,TempAdv,TempAdv,20,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Monday,take,6,3
+96,bert_a3_10ep,TempAdv,TempAdv,21,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on January,take,6,3
+97,bert_a3_10ep,TempAdv,TempAdv,22,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on February,take,6,3
+98,bert_a3_10ep,TempAdv,TempAdv,23,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on March,take,6,3
+99,bert_a3_10ep,TempAdv,TempAdv,24,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on April,take,6,3
+100,bert_a3_10ep,TempAdv,TempAdv,25,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on May,take,6,3
+101,bert_a3_10ep,TempAdv,TempAdv,26,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on June,take,6,3
+102,bert_a3_10ep,TempAdv,TempAdv,27,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on July,take,6,3
+103,bert_a3_10ep,TempAdv,TempAdv,28,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on August,take,6,3
+104,bert_a3_10ep,TempAdv,TempAdv,29,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on September,take,6,3
+105,bert_a3_10ep,TempAdv,TempAdv,30,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on October,take,6,3
+106,bert_a3_10ep,TempAdv,TempAdv,31,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on November,take,6,3
+107,bert_a3_10ep,TempAdv,TempAdv,32,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on December,take,6,3
+108,bert_a3_10ep,TempAdv,TempAdv,33,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Monday,take,6,3
+109,bert_a3_10ep,TempAdv,TempAdv,34,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Tuesday,take,6,3
+110,bert_a3_10ep,TempAdv,TempAdv,35,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Wednesday,take,6,3
+111,bert_a3_10ep,TempAdv,TempAdv,36,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Thursday,take,6,3
+112,bert_a3_10ep,TempAdv,TempAdv,37,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Friday,take,6,3
+113,bert_a3_10ep,TempAdv,TempAdv,38,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Saturday,take,6,3
+114,bert_a3_10ep,TempAdv,TempAdv,39,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Sunday,take,6,3
+115,bert_a3_10ep,TempAdv,TempAdv,40,O,B-ARGM-TMP,I will have a party next Saturday,have,6,2
+116,bert_a3_10ep,TempAdv,TempAdv,41,O,B-ARGM-TMP,I will have a party next January,have,6,2
+117,bert_a3_10ep,TempAdv,TempAdv,42,O,B-ARGM-TMP,I will have a party next February,have,6,2
+118,bert_a3_10ep,TempAdv,TempAdv,43,O,B-ARGM-TMP,I will have a party next March,have,6,2
+119,bert_a3_10ep,TempAdv,TempAdv,44,O,B-ARGM-TMP,I will have a party next April,have,6,2
+120,bert_a3_10ep,TempAdv,TempAdv,45,O,B-ARGM-TMP,I will have a party next May,have,6,2
+121,bert_a3_10ep,TempAdv,TempAdv,46,O,B-ARGM-TMP,I will have a party next June,have,6,2
+122,bert_a3_10ep,TempAdv,TempAdv,47,O,B-ARGM-TMP,I will have a party next July,have,6,2
+123,bert_a3_10ep,TempAdv,TempAdv,48,O,B-ARGM-TMP,I will have a party next August,have,6,2
+124,bert_a3_10ep,TempAdv,TempAdv,49,O,B-ARGM-TMP,I will have a party next September,have,6,2
+125,bert_a3_10ep,TempAdv,TempAdv,50,O,B-ARGM-TMP,I will have a party next October,have,6,2
+126,bert_a3_10ep,TempAdv,TempAdv,51,O,B-ARGM-TMP,I will have a party next November,have,6,2
+127,bert_a3_10ep,TempAdv,TempAdv,52,O,B-ARGM-TMP,I will have a party next December,have,6,2
+128,bert_a3_10ep,TempAdv,TempAdv,53,O,B-ARGM-TMP,I will have a party next Monday,have,6,2
+129,bert_a3_10ep,TempAdv,TempAdv,54,O,B-ARGM-TMP,I will have a party next Tuesday,have,6,2
+130,bert_a3_10ep,TempAdv,TempAdv,55,O,B-ARGM-TMP,I will have a party next Wednesday,have,6,2
+131,bert_a3_10ep,TempAdv,TempAdv,56,O,B-ARGM-TMP,I will have a party next Thursday,have,6,2
+132,bert_a3_10ep,TempAdv,TempAdv,57,O,B-ARGM-TMP,I will have a party next Friday,have,6,2
+133,bert_a3_10ep,TempAdv,TempAdv,58,O,B-ARGM-TMP,I will have a party next Saturday,have,6,2
+134,bert_a3_10ep,TempAdv,TempAdv,59,O,B-ARGM-TMP,I will have a party next Sunday,have,6,2
+135,bert_a3_10ep,NegAdv,NegAdv,0,B-ARGM-NEG,B-ARGM-NEG,I never go to the gym,go,1,2
+136,bert_a3_10ep,NegAdv,NegAdv,1,B-ARGM-NEG,B-ARGM-NEG,I never eat meat,eat,1,2
+137,bert_a3_10ep,NegAdv,NegAdv,2,B-ARGM-NEG,B-ARGM-NEG,I never drink alcohol,drink,1,2
+138,bert_a3_10ep,NegAdv,NegAdv,3,B-ARGM-NEG,B-ARGM-NEG,I never watch TV,watch,1,2
+139,bert_a3_10ep,NegAdv,NegAdv,4,B-ARGM-NEG,B-ARGM-NEG,I never play video games,play,1,2
+140,bert_a3_10ep,NegAdv,NegAdv,5,B-ARGM-NEG,B-ARGM-NEG,I never read books,read,1,2
+141,bert_a3_10ep,NegAdv,NegAdv,6,B-ARGM-NEG,B-ARGM-NEG,He never goes to the gym,goes,1,2
+142,bert_a3_10ep,NegAdv,NegAdv,7,B-ARGM-NEG,B-ARGM-NEG,He never eats meat,eats,1,2
+143,bert_a3_10ep,NegAdv,NegAdv,8,B-ARGM-NEG,B-ARGM-NEG,He never drinks alcohol,drinks,1,2
+144,bert_a3_10ep,NegAdv,NegAdv,9,B-ARGM-NEG,B-ARGM-NEG,He never watches TV,watches,1,2
+145,bert_a3_10ep,LocationVar,LocationVar,0,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Mozambique,live,6,4
+146,bert_a3_10ep,LocationVar,LocationVar,1,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Nepal,live,6,4
+147,bert_a3_10ep,LocationVar,LocationVar,2,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in China,live,6,4
+148,bert_a3_10ep,LocationVar,LocationVar,3,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Indonesia,live,6,4
+149,bert_a3_10ep,LocationVar,LocationVar,4,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Indonesia,live,6,4
+150,bert_a3_10ep,LocationVar,LocationVar,5,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Uzbekistan,live,6,4
+151,bert_a3_10ep,LocationVar,LocationVar,6,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Japan,live,6,4
+152,bert_a3_10ep,LocationVar,LocationVar,7,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in France,live,6,4
+153,bert_a3_10ep,LocationVar,LocationVar,8,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Italy,live,6,4
+154,bert_a3_10ep,LocationVar,LocationVar,9,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Canada,live,6,4
+155,bert_a3_10ep,LocationVar,LocationVar,10,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Mozambique,is,7,1
+156,bert_a3_10ep,LocationVar,LocationVar,11,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Nepal,is,7,1
+157,bert_a3_10ep,LocationVar,LocationVar,12,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in China,is,7,1
+158,bert_a3_10ep,LocationVar,LocationVar,13,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Indonesia,is,7,1
+159,bert_a3_10ep,LocationVar,LocationVar,14,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Indonesia,is,7,1
+160,bert_a3_10ep,LocationVar,LocationVar,15,O,B-ARGM-LOC,There is a fantastic flower shop in Uzbekistan,is,7,1
+161,bert_a3_10ep,LocationVar,LocationVar,16,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Japan,is,7,1
+162,bert_a3_10ep,LocationVar,LocationVar,17,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in France,is,7,1
+163,bert_a3_10ep,LocationVar,LocationVar,18,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Italy,is,7,1
+164,bert_a3_10ep,LocationVar,LocationVar,19,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Canada,is,7,1
+165,bert_a3_10ep,LocationVar,LocationVar,20,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Oakland,bought,4,1
+166,bert_a3_10ep,LocationVar,LocationVar,21,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Cleveland,bought,4,1
+167,bert_a3_10ep,LocationVar,LocationVar,22,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Cincinnati,bought,4,1
+168,bert_a3_10ep,LocationVar,LocationVar,23,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Greensboro,bought,4,1
+169,bert_a3_10ep,LocationVar,LocationVar,24,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Greensboro,bought,4,1
+170,bert_a3_10ep,LocationVar,LocationVar,25,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in San Jose,bought,4,1
+171,bert_a3_10ep,LocationVar,LocationVar,26,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Lubbock,bought,4,1
+172,bert_a3_10ep,LocationVar,LocationVar,27,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Denver,bought,4,1
+173,bert_a3_10ep,LocationVar,LocationVar,28,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Kansas,bought,4,1
+174,bert_a3_10ep,LocationVar,LocationVar,29,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Garland,bought,4,1
+175,bert_a3_10ep,FreqAdvPast,FreqAdvPast,0,B-ARGM-TMP,B-ARGM-TMP,I ate a cake yesterday,ate,4,1
+176,bert_a3_10ep,FreqAdvPast,FreqAdvPast,1,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last week,ate,5,1
+177,bert_a3_10ep,FreqAdvPast,FreqAdvPast,2,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last month,ate,5,1
+178,bert_a3_10ep,FreqAdvPast,FreqAdvPast,3,B-ARGM-TMP,B-ARGM-TMP,I ate a cake yesterday,ate,4,1
+179,bert_a3_10ep,FreqAdvPast,FreqAdvPast,4,B-ARGM-TMP,B-ARGM-TMP,I ate a cake this morning,ate,5,1
+180,bert_a3_10ep,FreqAdvPast,FreqAdvPast,5,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last night,ate,5,1
+181,bert_a3_10ep,FreqAdvPast,FreqAdvPast,6,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last year,ate,5,1
+182,bert_a3_10ep,FreqAdvPast,FreqAdvPast,7,B-ARGM-TMP,B-ARGM-TMP,I ate a cake recently,ate,4,1
+183,bert_a3_10ep,FreqAdvPast,FreqAdvPast,8,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother recently,visited,4,1
+184,bert_a3_10ep,FreqAdvPast,FreqAdvPast,9,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last week,visited,5,1
+185,bert_a3_10ep,FreqAdvPast,FreqAdvPast,10,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last month,visited,5,1
+186,bert_a3_10ep,FreqAdvPast,FreqAdvPast,11,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother yesterday,visited,4,1
+187,bert_a3_10ep,FreqAdvPast,FreqAdvPast,12,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother this morning,visited,5,1
+188,bert_a3_10ep,FreqAdvPast,FreqAdvPast,13,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last night,visited,5,1
+189,bert_a3_10ep,FreqAdvPast,FreqAdvPast,14,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last year,visited,5,1
+190,bert_a3_10ep,FreqAdvPast,FreqAdvPast,15,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother recently,visited,4,1
+191,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,0,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday tomorrow,having,6,3
+192,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,1,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday tomorrow,having,6,3
+193,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,2,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday today,having,6,3
+194,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,3,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday this afternoon,having,7,3
+195,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,4,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday tonight,having,6,3
+196,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,5,B-ARGM-TMP,B-ARGM-TMP,The concert begins tonight,begins,3,2
+197,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,6,B-ARGM-TMP,B-ARGM-TMP,The concert begins tomorrow,begins,3,2
+198,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,7,B-ARGM-TMP,B-ARGM-TMP,The concert begins today,begins,3,2
+199,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,8,B-ARGM-TMP,B-ARGM-TMP,The concert begins this afternoon,begins,4,2
+200,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,9,B-ARGM-TMP,B-ARGM-TMP,The concert begins tonight,begins,3,2
+201,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,10,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving today,arriving,4,3
+202,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,11,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving tomorrow,arriving,4,3
+203,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,12,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving today,arriving,4,3
+204,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,13,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving this afternoon,arriving,5,3
+205,bert_a3_10ep,FreqAdvPresent,FreqAdvPresent,14,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving tonight,arriving,4,3
+206,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,0,O,B-ARGM-TMP,I will have a party tonight,have,5,2
+207,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,1,O,B-ARGM-TMP,I will have a party next week,have,6,2
+208,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,2,O,B-ARGM-TMP,I will have a party next month,have,6,2
+209,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,3,O,B-ARGM-TMP,I will have a party next year,have,6,2
+210,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,4,O,B-ARGM-TMP,I will have a party tomorrow,have,5,2
+211,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,5,O,B-ARGM-TMP,I will have a party tonight,have,5,2
+212,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,6,B-ARGM-TMP,B-ARGM-TMP,He will go to the park tomorrow,go,6,2
+213,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,7,B-ARGM-TMP,B-ARGM-TMP,He will go to the park next week,go,7,2
+214,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,8,B-ARGM-TMP,B-ARGM-TMP,He will go to the park next month,go,7,2
+215,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,9,B-ARGM-TMP,B-ARGM-TMP,He will go to the park next year,go,7,2
+216,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,10,B-ARGM-TMP,B-ARGM-TMP,He will go to the park tomorrow,go,6,2
+217,bert_a3_10ep,FreqAdvFuture,FreqAdvFuture,11,B-ARGM-TMP,B-ARGM-TMP,He will go to the park tonight,go,6,2
+218,bert_a3_10ep,VarDirTarget,VarDirTarget,0,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the building,jumped,3,2
+219,bert_a3_10ep,VarDirTarget,VarDirTarget,1,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the store,ran,5,2
+220,bert_a3_10ep,VarDirTarget,VarDirTarget,2,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the school,biked,4,1
+221,bert_a3_10ep,VarDirTarget,VarDirTarget,3,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the garbe disposal,biked,4,1
+222,bert_a3_10ep,VarDirTarget,VarDirTarget,4,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the gym,biked,4,1
+223,bert_a3_10ep,VarDirTarget,VarDirTarget,5,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the school,jumped,3,2
+224,bert_a3_10ep,VarDirTarget,VarDirTarget,6,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the store,ran,5,2
+225,bert_a3_10ep,VarDirTarget,VarDirTarget,7,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the school,ran,5,2
+226,bert_a3_10ep,VarDirTarget,VarDirTarget,8,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the park,jumped,3,2
+227,bert_a3_10ep,VarDirTarget,VarDirTarget,9,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+228,bert_a3_10ep,VarDirTarget,VarDirTarget,10,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the school,biked,4,1
+229,bert_a3_10ep,VarDirTarget,VarDirTarget,11,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the school,jumped,3,2
+230,bert_a3_10ep,VarDirTarget,VarDirTarget,12,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the gym,jumped,3,2
+231,bert_a3_10ep,VarDirTarget,VarDirTarget,13,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the cinema,biked,4,1
+232,bert_a3_10ep,VarDirTarget,VarDirTarget,14,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the zoo,biked,4,1
+233,bert_a3_10ep,VarDirTarget,VarDirTarget,15,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+234,bert_a3_10ep,VarDirTarget,VarDirTarget,16,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the park,jumped,3,2
+235,bert_a3_10ep,VarDirTarget,VarDirTarget,17,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the school,biked,4,1
+236,bert_a3_10ep,VarDirTarget,VarDirTarget,18,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+237,bert_a3_10ep,VarDirTarget,VarDirTarget,19,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the cinema,ran,5,2
+238,bert_a3_10ep,VarDirTarget,VarDirTarget,20,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the school,jumped,3,2
+239,bert_a3_10ep,VarDirTarget,VarDirTarget,21,B-ARG2,B-ARGM-DIR,The dog ran along the road to the gym,ran,5,2
+240,bert_a3_10ep,VarDirTarget,VarDirTarget,22,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+241,bert_a3_10ep,VarDirTarget,VarDirTarget,23,B-ARG2,B-ARGM-DIR,The dog ran along the road to the university,ran,5,2
+242,bert_a3_10ep,VarDirTarget,VarDirTarget,24,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the garbe disposal,jumped,3,2
+243,bert_a3_10ep,VarGoalSource,VarGoalSource,0,B-ARG2,B-ARGM-GOL,The laundry should be put onto the floor,put,7,4
+244,bert_a3_10ep,VarGoalSource,VarGoalSource,1,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into the red basket,dumped,10,1
+245,bert_a3_10ep,VarGoalSource,VarGoalSource,2,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+246,bert_a3_10ep,VarGoalSource,VarGoalSource,3,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+247,bert_a3_10ep,VarGoalSource,VarGoalSource,4,B-ARG2,B-ARGM-GOL,The laundry should be put into the garbage disposal,put,8,4
+248,bert_a3_10ep,VarGoalSource,VarGoalSource,5,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+249,bert_a3_10ep,VarGoalSource,VarGoalSource,6,B-ARG2,B-ARGM-GOL,My brother threw a paper into the red basket,threw,8,2
+250,bert_a3_10ep,VarGoalSource,VarGoalSource,7,B-ARG2,B-ARGM-GOL,My brother threw a paper into a huge bin,threw,8,2
+251,bert_a3_10ep,VarGoalSource,VarGoalSource,8,B-ARG2,B-ARGM-GOL,My brother threw a paper into the garbage disposal,threw,8,2
+252,bert_a3_10ep,VarGoalSource,VarGoalSource,9,B-ARG2,B-ARGM-GOL,My brother threw a paper onto the floor,threw,7,2
+253,bert_a3_10ep,VarGoalSource,VarGoalSource,10,B-ARG2,B-ARGM-GOL,My brother threw a paper into the red basket,threw,8,2
+254,bert_a3_10ep,VarGoalSource,VarGoalSource,11,B-ARG2,B-ARGM-GOL,The laundry should be put onto the floor,put,7,4
+255,bert_a3_10ep,VarGoalSource,VarGoalSource,12,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into the garbage disposal,dumped,10,1
+256,bert_a3_10ep,VarGoalSource,VarGoalSource,13,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+257,bert_a3_10ep,VarGoalSource,VarGoalSource,14,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+258,bert_a3_10ep,VarGoalSource,VarGoalSource,15,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into a huge bin,dumped,10,1
+259,bert_a3_10ep,VarGoalSource,VarGoalSource,16,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+260,bert_a3_10ep,VarGoalSource,VarGoalSource,17,B-ARG2,B-ARGM-GOL,The laundry should be put into a huge bin,put,8,4
+261,bert_a3_10ep,VarGoalSource,VarGoalSource,18,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into a huge bin,dumped,10,1
+262,bert_a3_10ep,VarGoalSource,VarGoalSource,19,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+263,bert_a3_10ep,VarGoalSource,VarGoalSource,20,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into the garbage disposal,dumped,10,1
+264,bert_a3_10ep,VarGoalSource,VarGoalSource,21,B-ARG2,B-ARGM-GOL,My brother threw a paper into the garbage disposal,threw,8,2
+265,bert_a3_10ep,VarGoalSource,VarGoalSource,22,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+266,bert_a3_10ep,VarGoalSource,VarGoalSource,23,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+267,bert_a3_10ep,VarGoalSource,VarGoalSource,24,B-ARG2,B-ARGM-GOL,The laundry should be put onto the floor,put,7,4
+268,bert_a3_10ep_adv,PatientRight,PatientRight,0,B-ARG1,B-ARG1,There was a book,was,3,1
+269,bert_a3_10ep_adv,PatientRight,PatientRight,1,B-ARG0,B-ARG0,There lived a person,lived,3,1
+270,bert_a3_10ep_adv,PatientRight,PatientRight,2,B-ARG1,B-ARG1,There lied a book,lied,3,1
+271,bert_a3_10ep_adv,PatientRight,PatientRight,3,B-ARG1,B-ARG1,There existed a chair,existed,3,1
+272,bert_a3_10ep_adv,PatientRight,PatientRight,4,B-ARG1,B-ARG1,There lied a phone,lied,3,1
+273,bert_a3_10ep_adv,PatientRight,PatientRight,5,B-ARG1,B-ARG1,There died a person,died,3,1
+274,bert_a3_10ep_adv,PatientRight,PatientRight,6,B-ARG1,B-ARG1,There exists a building,exists,3,1
+275,bert_a3_10ep_adv,PatientRight,PatientRight,7,B-ARG1,B-ARG1,There was a phone,was,3,1
+276,bert_a3_10ep_adv,PatientRight,PatientRight,8,B-ARG1,B-ARG1,There lays a screen,lays,3,1
+277,bert_a3_10ep_adv,PatientRight,PatientRight,9,B-ARG1,B-ARG1,There remains a person,remains,3,1
+278,bert_a3_10ep_adv,PatientRight,PatientRight,10,B-ARG1,B-ARG1,There lays a book,lays,3,1
+279,bert_a3_10ep_adv,PatientRight,PatientRight,11,B-ARG1,B-ARG1,There hangs a TV,hangs,3,1
+280,bert_a3_10ep_adv,PatientRight,PatientRight,12,B-ARG1,B-ARG1,Here exists a book,exists,3,1
+281,bert_a3_10ep_adv,PatientRight,PatientRight,13,B-ARG1,B-ARG1,Here runs a computer,runs,3,1
+282,bert_a3_10ep_adv,PatientRight,PatientRight,14,B-ARG1,B-ARG1,Here exists a phone,exists,3,1
+283,bert_a3_10ep_adv,PatientRight,PatientRight,15,B-ARG1,B-ARG1,Here swings a chair,swings,3,1
+284,bert_a3_10ep_adv,PatientRight,PatientRight,16,B-ARG1,B-ARG1,Here spawns a car,spawns,3,1
+285,bert_a3_10ep_adv,PatientRight,PatientRight,17,B-ARG1,B-ARG1,Here exists a building,exists,3,1
+286,bert_a3_10ep_adv,PatientRight,PatientRight,18,B-ARG1,B-ARG1,Here comes the sun,comes,3,1
+287,bert_a3_10ep_adv,PatientRight,PatientRight,19,B-ARG1,B-ARG1,Here projects a shadow,projects,3,1
+288,bert_a3_10ep_adv,PatientRight,PatientRight,20,B-ARG1,B-ARG1,Here was a building,was,3,1
+289,bert_a3_10ep_adv,PatientRight,PatientRight,21,B-ARG1,B-ARG1,Here is a phone,is,3,1
+290,bert_a3_10ep_adv,PatientRight,PatientRight,22,B-ARG1,B-ARG1,Here lays a car,lays,3,1
+291,bert_a3_10ep_adv,PatientRight,PatientRight,23,B-ARG1,B-ARG1,Here grows a tree,grows,3,1
+292,bert_a3_10ep_adv,PatientRight,PatientRight,24,B-ARG1,B-ARG1,Here floats a computer,floats,3,1
+293,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,0,B-ARG0,B-ARG0,Anybody that accidentally yet happily eats in private is unreliable,eats,0,5
+294,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,1,B-ARG0,B-ARG0,Nobody that accidentally and sadly eats in private is smart,eats,0,5
+295,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,2,B-ARG0,B-ARG0,Anybody that unintentionally and angrily drinks in private is unreliable,drinks,0,5
+296,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,3,B-ARG0,B-ARG0,Anybody that intentionally and calmly cries in the bus is smart,cries,0,5
+297,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,4,B-ARG0,B-ARG0,Nobody that unintentionally yet sadly cries in public is trustworthy,cries,0,5
+298,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,5,B-ARG0,B-ARG0,Anybody that intentionally and happily cries in private is unreliable,cries,0,5
+299,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,6,B-ARG0,B-ARG0,Nobody that intentionally and angrily drinks in public is trustworthy,drinks,0,5
+300,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,7,B-ARG0,B-ARG0,Nobody that accidentally and calmly drinks in public is smart,drinks,0,5
+301,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,8,B-ARG0,B-ARG0,Nobody that unintentionally and sadly laughs in public is unreliable,laughs,0,5
+302,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,9,B-ARG0,B-ARG0,Anybody that accidentally yet angrily laughs in public is trustworthy,laughs,0,5
+303,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,10,B-ARG0,B-ARG0,Nobody that accidentally and sadly cries in public is smart,cries,0,5
+304,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,11,B-ARG0,B-ARG0,Nobody that intentionally and calmly eats in public is unreliable,eats,0,5
+305,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,12,B-ARG0,B-ARG0,Anybody that intentionally and calmly eats in the bus is smart,eats,0,5
+306,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,13,B-ARG0,B-ARG0,Anybody that unintentionally and happily eats in public is unreliable,eats,0,5
+307,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,14,B-ARG0,B-ARG0,Nobody that unintentionally and sadly eats in public is trustworthy,eats,0,5
+308,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,15,B-ARG0,B-ARG0,Nobody that accidentally and angrily eats in the bus is smart,eats,0,5
+309,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,16,B-ARG0,B-ARG0,Nobody that accidentally yet happily eats in public is unreliable,eats,0,5
+310,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,17,B-ARG0,B-ARG0,Nobody that accidentally and sadly cries in the bus is trustworthy,cries,0,5
+311,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,18,B-ARG0,B-ARG0,Anybody that intentionally yet sadly eats in the bus is smart,eats,0,5
+312,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,19,B-ARG0,B-ARG0,Anybody that intentionally and happily drinks in private is smart,drinks,0,5
+313,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,20,B-ARG0,B-ARG0,Nobody that unintentionally and happily laughs in private is unreliable,laughs,0,5
+314,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,21,B-ARG0,B-ARG0,Anybody that unintentionally and sadly cries in private is unreliable,cries,0,5
+315,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,22,B-ARG0,B-ARG0,Nobody that intentionally and angrily eats in public is trustworthy,eats,0,5
+316,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,23,B-ARG0,B-ARG0,Nobody that accidentally and angrily cries in private is trustworthy,cries,0,5
+317,bert_a3_10ep_adv,AgentRole3D,AgentRole3D,24,B-ARG0,B-ARG0,Nobody that intentionally and angrily drinks in the bus is smart,drinks,0,5
+318,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,0,B-ARG1,B-ARG1,The animal beside that car is blurry,is,1,5
+319,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,1,B-ARG1,B-ARG1,The child beside that road is green,is,1,5
+320,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,2,B-ARG1,B-ARG1,The mailman near this road is sad,is,1,5
+321,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,3,B-ARG1,B-ARG1,The person aside this house is blurry,is,1,5
+322,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,4,B-ARG1,B-ARG1,The person aside that road is sad,is,1,5
+323,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,5,B-ARG1,B-ARG1,The person beside that car is angry,is,1,5
+324,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,6,B-ARG1,B-ARG1,The mailman by that road is sad,is,1,5
+325,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,7,B-ARG1,B-ARG1,The child by this road is blurry,is,1,5
+326,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,8,B-ARG1,B-ARG1,The animal by that car is sad,is,1,5
+327,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,9,B-ARG1,B-ARG1,The person near that house is sad,is,1,5
+328,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,10,B-ARG1,B-ARG1,The mailman aside that car is happy,is,1,5
+329,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,11,B-ARG1,B-ARG1,The mailman near that road is sad,is,1,5
+330,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,12,B-ARG1,B-ARG1,The animal aside that road is happy,is,1,5
+331,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,13,B-ARG1,B-ARG1,The mailman aside this car is sad,is,1,5
+332,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,14,B-ARG1,B-ARG1,The animal by that road is happy,is,1,5
+333,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,15,B-ARG1,B-ARG1,The child near this car is green,is,1,5
+334,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,16,B-ARG1,B-ARG1,The animal beside this road is angry,is,1,5
+335,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,17,B-ARG1,B-ARG1,The child by that house is angry,is,1,5
+336,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,18,B-ARG1,B-ARG1,The person near that car is blurry,is,1,5
+337,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,19,B-ARG1,B-ARG1,The person near that car is angry,is,1,5
+338,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,20,O,B-ARG1,The person aside this car is blurry,is,1,5
+339,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,21,B-ARG1,B-ARG1,The animal aside this house is happy,is,1,5
+340,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,22,B-ARG1,B-ARG1,The mailman beside this road is sad,is,1,5
+341,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,23,B-ARG1,B-ARG1,The person by that house is sad,is,1,5
+342,bert_a3_10ep_adv,PatientRole3D,PatientRole3D,24,B-ARG1,B-ARG1,The animal aside this car is happy,is,1,5
+343,bert_a3_10ep_adv,TempAdv,TempAdv,0,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last May,visited,5,1
+344,bert_a3_10ep_adv,TempAdv,TempAdv,1,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last January,visited,5,1
+345,bert_a3_10ep_adv,TempAdv,TempAdv,2,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last February,visited,5,1
+346,bert_a3_10ep_adv,TempAdv,TempAdv,3,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last March,visited,5,1
+347,bert_a3_10ep_adv,TempAdv,TempAdv,4,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last April,visited,5,1
+348,bert_a3_10ep_adv,TempAdv,TempAdv,5,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last May,visited,5,1
+349,bert_a3_10ep_adv,TempAdv,TempAdv,6,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last June,visited,5,1
+350,bert_a3_10ep_adv,TempAdv,TempAdv,7,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last July,visited,5,1
+351,bert_a3_10ep_adv,TempAdv,TempAdv,8,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last August,visited,5,1
+352,bert_a3_10ep_adv,TempAdv,TempAdv,9,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last September,visited,5,1
+353,bert_a3_10ep_adv,TempAdv,TempAdv,10,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last October,visited,5,1
+354,bert_a3_10ep_adv,TempAdv,TempAdv,11,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last November,visited,5,1
+355,bert_a3_10ep_adv,TempAdv,TempAdv,12,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last December,visited,5,1
+356,bert_a3_10ep_adv,TempAdv,TempAdv,13,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Monday,visited,5,1
+357,bert_a3_10ep_adv,TempAdv,TempAdv,14,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Tuesday,visited,5,1
+358,bert_a3_10ep_adv,TempAdv,TempAdv,15,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Wednesday,visited,5,1
+359,bert_a3_10ep_adv,TempAdv,TempAdv,16,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Thursday,visited,5,1
+360,bert_a3_10ep_adv,TempAdv,TempAdv,17,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Friday,visited,5,1
+361,bert_a3_10ep_adv,TempAdv,TempAdv,18,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Saturday,visited,5,1
+362,bert_a3_10ep_adv,TempAdv,TempAdv,19,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last Sunday,visited,5,1
+363,bert_a3_10ep_adv,TempAdv,TempAdv,20,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Monday,take,6,3
+364,bert_a3_10ep_adv,TempAdv,TempAdv,21,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on January,take,6,3
+365,bert_a3_10ep_adv,TempAdv,TempAdv,22,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on February,take,6,3
+366,bert_a3_10ep_adv,TempAdv,TempAdv,23,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on March,take,6,3
+367,bert_a3_10ep_adv,TempAdv,TempAdv,24,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on April,take,6,3
+368,bert_a3_10ep_adv,TempAdv,TempAdv,25,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on May,take,6,3
+369,bert_a3_10ep_adv,TempAdv,TempAdv,26,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on June,take,6,3
+370,bert_a3_10ep_adv,TempAdv,TempAdv,27,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on July,take,6,3
+371,bert_a3_10ep_adv,TempAdv,TempAdv,28,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on August,take,6,3
+372,bert_a3_10ep_adv,TempAdv,TempAdv,29,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on September,take,6,3
+373,bert_a3_10ep_adv,TempAdv,TempAdv,30,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on October,take,6,3
+374,bert_a3_10ep_adv,TempAdv,TempAdv,31,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on November,take,6,3
+375,bert_a3_10ep_adv,TempAdv,TempAdv,32,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on December,take,6,3
+376,bert_a3_10ep_adv,TempAdv,TempAdv,33,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Monday,take,6,3
+377,bert_a3_10ep_adv,TempAdv,TempAdv,34,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Tuesday,take,6,3
+378,bert_a3_10ep_adv,TempAdv,TempAdv,35,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Wednesday,take,6,3
+379,bert_a3_10ep_adv,TempAdv,TempAdv,36,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Thursday,take,6,3
+380,bert_a3_10ep_adv,TempAdv,TempAdv,37,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Friday,take,6,3
+381,bert_a3_10ep_adv,TempAdv,TempAdv,38,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Saturday,take,6,3
+382,bert_a3_10ep_adv,TempAdv,TempAdv,39,B-ARGM-TMP,B-ARGM-TMP,My brithday will take place on Sunday,take,6,3
+383,bert_a3_10ep_adv,TempAdv,TempAdv,40,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Saturday,have,6,2
+384,bert_a3_10ep_adv,TempAdv,TempAdv,41,B-ARGM-TMP,B-ARGM-TMP,I will have a party next January,have,6,2
+385,bert_a3_10ep_adv,TempAdv,TempAdv,42,B-ARGM-TMP,B-ARGM-TMP,I will have a party next February,have,6,2
+386,bert_a3_10ep_adv,TempAdv,TempAdv,43,B-ARGM-TMP,B-ARGM-TMP,I will have a party next March,have,6,2
+387,bert_a3_10ep_adv,TempAdv,TempAdv,44,B-ARGM-TMP,B-ARGM-TMP,I will have a party next April,have,6,2
+388,bert_a3_10ep_adv,TempAdv,TempAdv,45,B-ARGM-TMP,B-ARGM-TMP,I will have a party next May,have,6,2
+389,bert_a3_10ep_adv,TempAdv,TempAdv,46,B-ARGM-TMP,B-ARGM-TMP,I will have a party next June,have,6,2
+390,bert_a3_10ep_adv,TempAdv,TempAdv,47,B-ARGM-TMP,B-ARGM-TMP,I will have a party next July,have,6,2
+391,bert_a3_10ep_adv,TempAdv,TempAdv,48,B-ARGM-TMP,B-ARGM-TMP,I will have a party next August,have,6,2
+392,bert_a3_10ep_adv,TempAdv,TempAdv,49,B-ARGM-TMP,B-ARGM-TMP,I will have a party next September,have,6,2
+393,bert_a3_10ep_adv,TempAdv,TempAdv,50,B-ARGM-TMP,B-ARGM-TMP,I will have a party next October,have,6,2
+394,bert_a3_10ep_adv,TempAdv,TempAdv,51,B-ARGM-TMP,B-ARGM-TMP,I will have a party next November,have,6,2
+395,bert_a3_10ep_adv,TempAdv,TempAdv,52,B-ARGM-TMP,B-ARGM-TMP,I will have a party next December,have,6,2
+396,bert_a3_10ep_adv,TempAdv,TempAdv,53,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Monday,have,6,2
+397,bert_a3_10ep_adv,TempAdv,TempAdv,54,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Tuesday,have,6,2
+398,bert_a3_10ep_adv,TempAdv,TempAdv,55,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Wednesday,have,6,2
+399,bert_a3_10ep_adv,TempAdv,TempAdv,56,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Thursday,have,6,2
+400,bert_a3_10ep_adv,TempAdv,TempAdv,57,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Friday,have,6,2
+401,bert_a3_10ep_adv,TempAdv,TempAdv,58,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Saturday,have,6,2
+402,bert_a3_10ep_adv,TempAdv,TempAdv,59,B-ARGM-TMP,B-ARGM-TMP,I will have a party next Sunday,have,6,2
+403,bert_a3_10ep_adv,NegAdv,NegAdv,0,B-ARGM-NEG,B-ARGM-NEG,I never go to the gym,go,1,2
+404,bert_a3_10ep_adv,NegAdv,NegAdv,1,B-ARGM-NEG,B-ARGM-NEG,I never eat meat,eat,1,2
+405,bert_a3_10ep_adv,NegAdv,NegAdv,2,B-ARGM-NEG,B-ARGM-NEG,I never drink alcohol,drink,1,2
+406,bert_a3_10ep_adv,NegAdv,NegAdv,3,B-ARGM-NEG,B-ARGM-NEG,I never watch TV,watch,1,2
+407,bert_a3_10ep_adv,NegAdv,NegAdv,4,B-ARGM-NEG,B-ARGM-NEG,I never play video games,play,1,2
+408,bert_a3_10ep_adv,NegAdv,NegAdv,5,B-ARGM-NEG,B-ARGM-NEG,I never read books,read,1,2
+409,bert_a3_10ep_adv,NegAdv,NegAdv,6,B-ARGM-NEG,B-ARGM-NEG,He never goes to the gym,goes,1,2
+410,bert_a3_10ep_adv,NegAdv,NegAdv,7,B-ARGM-NEG,B-ARGM-NEG,He never eats meat,eats,1,2
+411,bert_a3_10ep_adv,NegAdv,NegAdv,8,B-ARGM-NEG,B-ARGM-NEG,He never drinks alcohol,drinks,1,2
+412,bert_a3_10ep_adv,NegAdv,NegAdv,9,B-ARGM-NEG,B-ARGM-NEG,He never watches TV,watches,1,2
+413,bert_a3_10ep_adv,LocationVar,LocationVar,0,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Mozambique,live,6,4
+414,bert_a3_10ep_adv,LocationVar,LocationVar,1,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Nepal,live,6,4
+415,bert_a3_10ep_adv,LocationVar,LocationVar,2,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in China,live,6,4
+416,bert_a3_10ep_adv,LocationVar,LocationVar,3,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Indonesia,live,6,4
+417,bert_a3_10ep_adv,LocationVar,LocationVar,4,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Indonesia,live,6,4
+418,bert_a3_10ep_adv,LocationVar,LocationVar,5,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Uzbekistan,live,6,4
+419,bert_a3_10ep_adv,LocationVar,LocationVar,6,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Japan,live,6,4
+420,bert_a3_10ep_adv,LocationVar,LocationVar,7,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in France,live,6,4
+421,bert_a3_10ep_adv,LocationVar,LocationVar,8,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Italy,live,6,4
+422,bert_a3_10ep_adv,LocationVar,LocationVar,9,B-ARGM-LOC,B-ARGM-LOC,My mother used to live in Canada,live,6,4
+423,bert_a3_10ep_adv,LocationVar,LocationVar,10,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Mozambique,is,7,1
+424,bert_a3_10ep_adv,LocationVar,LocationVar,11,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Nepal,is,7,1
+425,bert_a3_10ep_adv,LocationVar,LocationVar,12,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in China,is,7,1
+426,bert_a3_10ep_adv,LocationVar,LocationVar,13,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Indonesia,is,7,1
+427,bert_a3_10ep_adv,LocationVar,LocationVar,14,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Indonesia,is,7,1
+428,bert_a3_10ep_adv,LocationVar,LocationVar,15,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Uzbekistan,is,7,1
+429,bert_a3_10ep_adv,LocationVar,LocationVar,16,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Japan,is,7,1
+430,bert_a3_10ep_adv,LocationVar,LocationVar,17,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in France,is,7,1
+431,bert_a3_10ep_adv,LocationVar,LocationVar,18,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Italy,is,7,1
+432,bert_a3_10ep_adv,LocationVar,LocationVar,19,B-ARGM-LOC,B-ARGM-LOC,There is a fantastic flower shop in Canada,is,7,1
+433,bert_a3_10ep_adv,LocationVar,LocationVar,20,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Oakland,bought,4,1
+434,bert_a3_10ep_adv,LocationVar,LocationVar,21,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Cleveland,bought,4,1
+435,bert_a3_10ep_adv,LocationVar,LocationVar,22,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Cincinnati,bought,4,1
+436,bert_a3_10ep_adv,LocationVar,LocationVar,23,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Greensboro,bought,4,1
+437,bert_a3_10ep_adv,LocationVar,LocationVar,24,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Greensboro,bought,4,1
+438,bert_a3_10ep_adv,LocationVar,LocationVar,25,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in San Jose,bought,4,1
+439,bert_a3_10ep_adv,LocationVar,LocationVar,26,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Lubbock,bought,4,1
+440,bert_a3_10ep_adv,LocationVar,LocationVar,27,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Denver,bought,4,1
+441,bert_a3_10ep_adv,LocationVar,LocationVar,28,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Kansas,bought,4,1
+442,bert_a3_10ep_adv,LocationVar,LocationVar,29,B-ARGM-LOC,B-ARGM-LOC,I bought flowers in Garland,bought,4,1
+443,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,0,B-ARGM-TMP,B-ARGM-TMP,I ate a cake yesterday,ate,4,1
+444,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,1,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last week,ate,5,1
+445,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,2,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last month,ate,5,1
+446,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,3,B-ARGM-TMP,B-ARGM-TMP,I ate a cake yesterday,ate,4,1
+447,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,4,B-ARGM-TMP,B-ARGM-TMP,I ate a cake this morning,ate,5,1
+448,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,5,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last night,ate,5,1
+449,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,6,B-ARGM-TMP,B-ARGM-TMP,I ate a cake last year,ate,5,1
+450,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,7,B-ARGM-TMP,B-ARGM-TMP,I ate a cake recently,ate,4,1
+451,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,8,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother recently,visited,4,1
+452,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,9,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last week,visited,5,1
+453,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,10,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last month,visited,5,1
+454,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,11,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother yesterday,visited,4,1
+455,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,12,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother this morning,visited,5,1
+456,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,13,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last night,visited,5,1
+457,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,14,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother last year,visited,5,1
+458,bert_a3_10ep_adv,FreqAdvPast,FreqAdvPast,15,B-ARGM-TMP,B-ARGM-TMP,I visited my grandmother recently,visited,4,1
+459,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,0,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday tomorrow,having,6,3
+460,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,1,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday tomorrow,having,6,3
+461,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,2,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday today,having,6,3
+462,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,3,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday this afternoon,having,7,3
+463,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,4,B-ARGM-TMP,B-ARGM-TMP,I will be having my birthday tonight,having,6,3
+464,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,5,B-ARGM-TMP,B-ARGM-TMP,The concert begins tonight,begins,3,2
+465,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,6,B-ARGM-TMP,B-ARGM-TMP,The concert begins tomorrow,begins,3,2
+466,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,7,B-ARGM-TMP,B-ARGM-TMP,The concert begins today,begins,3,2
+467,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,8,B-ARGM-TMP,B-ARGM-TMP,The concert begins this afternoon,begins,4,2
+468,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,9,B-ARGM-TMP,B-ARGM-TMP,The concert begins tonight,begins,3,2
+469,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,10,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving today,arriving,4,3
+470,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,11,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving tomorrow,arriving,4,3
+471,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,12,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving today,arriving,4,3
+472,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,13,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving this afternoon,arriving,5,3
+473,bert_a3_10ep_adv,FreqAdvPresent,FreqAdvPresent,14,B-ARGM-TMP,B-ARGM-TMP,Her car is arriving tonight,arriving,4,3
+474,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,0,B-ARGM-TMP,B-ARGM-TMP,I will have a party tonight,have,5,2
+475,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,1,B-ARGM-TMP,B-ARGM-TMP,I will have a party next week,have,6,2
+476,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,2,B-ARGM-TMP,B-ARGM-TMP,I will have a party next month,have,6,2
+477,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,3,B-ARGM-TMP,B-ARGM-TMP,I will have a party next year,have,6,2
+478,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,4,B-ARGM-TMP,B-ARGM-TMP,I will have a party tomorrow,have,5,2
+479,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,5,B-ARGM-TMP,B-ARGM-TMP,I will have a party tonight,have,5,2
+480,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,6,B-ARGM-TMP,B-ARGM-TMP,He will go to the park tomorrow,go,6,2
+481,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,7,B-ARGM-TMP,B-ARGM-TMP,He will go to the park next week,go,7,2
+482,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,8,B-ARGM-TMP,B-ARGM-TMP,He will go to the park next month,go,7,2
+483,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,9,B-ARGM-TMP,B-ARGM-TMP,He will go to the park next year,go,7,2
+484,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,10,B-ARGM-TMP,B-ARGM-TMP,He will go to the park tomorrow,go,6,2
+485,bert_a3_10ep_adv,FreqAdvFuture,FreqAdvFuture,11,B-ARGM-TMP,B-ARGM-TMP,He will go to the park tonight,go,6,2
+486,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,0,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the building,jumped,3,2
+487,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,1,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the store,ran,5,2
+488,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,2,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the school,biked,4,1
+489,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,3,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the garbe disposal,biked,4,1
+490,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,4,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the gym,biked,4,1
+491,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,5,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the school,jumped,3,2
+492,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,6,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the store,ran,5,2
+493,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,7,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the school,ran,5,2
+494,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,8,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the park,jumped,3,2
+495,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,9,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+496,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,10,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the school,biked,4,1
+497,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,11,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the school,jumped,3,2
+498,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,12,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the gym,jumped,3,2
+499,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,13,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the cinema,biked,4,1
+500,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,14,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the zoo,biked,4,1
+501,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,15,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+502,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,16,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the park,jumped,3,2
+503,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,17,B-ARGM-DIR,B-ARGM-DIR,I biked from my house to the school,biked,4,1
+504,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,18,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+505,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,19,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the cinema,ran,5,2
+506,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,20,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the school,jumped,3,2
+507,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,21,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the gym,ran,5,2
+508,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,22,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the restaurant,jumped,3,2
+509,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,23,B-ARGM-DIR,B-ARGM-DIR,The dog ran along the road to the university,ran,5,2
+510,bert_a3_10ep_adv,VarDirTarget,VarDirTarget,24,B-ARGM-DIR,B-ARGM-DIR,The cat jumped forward from the roof to the garbe disposal,jumped,3,2
+511,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,0,B-ARG2,B-ARGM-GOL,The laundry should be put onto the floor,put,7,4
+512,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,1,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into the red basket,dumped,10,1
+513,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,2,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+514,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,3,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+515,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,4,B-ARG2,B-ARGM-GOL,The laundry should be put into the garbage disposal,put,8,4
+516,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,5,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+517,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,6,B-ARG2,B-ARGM-GOL,My brother threw a paper into the red basket,threw,8,2
+518,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,7,B-ARG2,B-ARGM-GOL,My brother threw a paper into a huge bin,threw,8,2
+519,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,8,B-ARG2,B-ARGM-GOL,My brother threw a paper into the garbage disposal,threw,8,2
+520,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,9,B-ARG2,B-ARGM-GOL,My brother threw a paper onto the floor,threw,7,2
+521,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,10,B-ARG2,B-ARGM-GOL,My brother threw a paper into the red basket,threw,8,2
+522,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,11,B-ARG2,B-ARGM-GOL,The laundry should be put onto the floor,put,7,4
+523,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,12,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into the garbage disposal,dumped,10,1
+524,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,13,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+525,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,14,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+526,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,15,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into a huge bin,dumped,10,1
+527,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,16,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+528,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,17,B-ARG2,B-ARGM-GOL,The laundry should be put into a huge bin,put,8,4
+529,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,18,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into a huge bin,dumped,10,1
+530,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,19,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+531,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,20,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house into the garbage disposal,dumped,10,1
+532,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,21,B-ARG2,B-ARGM-GOL,My brother threw a paper into the garbage disposal,threw,8,2
+533,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,22,B-ARG2,B-ARGM-GOL,Workers dumped the waste from my house onto the floor,dumped,9,1
+534,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,23,B-ARG2,B-ARGM-GOL,The laundry should be put into the red basket,put,8,4
+535,bert_a3_10ep_adv,VarGoalSource,VarGoalSource,24,B-ARG2,B-ARGM-GOL,The laundry should be put onto the floor,put,7,4
