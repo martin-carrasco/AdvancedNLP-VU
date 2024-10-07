@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from typing import List, Dict
 
-from A3.preproc.parsing import preprocess
+from preproc.parsing import preprocess
 from evaluate import load
 from datasets import Dataset, load_dataset, Sequence, ClassLabel, Features, Value
 
@@ -93,14 +93,14 @@ def compute_metrics(p, label_list):
         "accuracy": results["overall_accuracy"],
     }
 
-def process_df_into_ds(filename: str):
+def process_df_into_ds(filename: str, label_list):
     """ Load the dataset and process it into a format that can be used by the model.
         Args:
             filename: str - the name of the file to be loaded
         Returns:
             ds: dataset - the processed dataset
     """
-    df, label_list = preprocess(filename, force=True)
+    df, _ = preprocess(filename, force=True)
 
     features = Features({
         'id': Sequence(feature=Value('float32')),

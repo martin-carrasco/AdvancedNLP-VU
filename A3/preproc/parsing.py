@@ -3,11 +3,11 @@ import os
 import pandas as pd
 import ast
 
-from A3.preproc.structures import Sentence, InvalidTokenException
+from preproc.structures import Sentence, InvalidTokenException
 
 RAW_DIR = 'data/raw/'
 
-def preprocess(filename: str, force=False) -> pd.DataFrame:
+def preprocess(filename: str, force=True) -> pd.DataFrame:
     file_name = filename.split('.')[0]
 
     # If file is already preprocessed not force it
