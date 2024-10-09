@@ -42,9 +42,4 @@ Some parts of the notebook cannot run without this file structure.
 
 ## Exam
 
-This folder contains the project related to the construction of a **Challenge Dataset**. Note, after cloning the repo create the directory `test_data`. The Python version used was 3.12.2 along with the libraries specified in the `requirements.txt` The files are:
-
-+ `pipelines.py`: Attempt to use HuggingFace pipeline to simplify inference, however it does not download models correctly from the Hub which results in random weight [WIP]
-+ `generate_dataset.py`: Generates the challenge dataset using CheckList and outputs it to a `test_data` directory
-+ `preprocess.py`: Preprocesses the output generated from CheckList and fits it into an amicable format to read (CSV) and be used for testing.
-+ `evaluate_tests.py`: Pulls the model from the Hub and perfoms the evaluation of the models. The output will be located in `test_data/{model_name}` where `model_name` depends on which model was selected. At the end of the file one can change the model between `srl_bert` and `srl_bert_advanced` under the `martincc98` repo.
+Go to `Exam` folder to find information
